@@ -1,0 +1,71 @@
+@import "./../../scss/variables.scss";
+@import "./../../scss/mixin.scss";
+
+.home {
+  -webkit-transition: $front-layer-anim-duration ease-in-out;
+     -moz-transition: $front-layer-anim-duration ease-in-out;
+       -o-transition: $front-layer-anim-duration ease-in-out;
+          transition: $front-layer-anim-duration ease-in-out;
+
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: calc(100% - #{$front-layer-min-width * 3});
+  height: 100%;
+  padding: $front-layer-min-width / 2 0 $front-layer-min-width / 2 $front-layer-min-width / 2;
+
+  > .wrapper {
+    position: relative;
+    height: 100%;
+
+    > .title {
+      z-index: 2000;
+
+      -webkit-animation-duration: 1s;
+              animation-duration: 1s;
+      -webkit-animation-fill-mode: both;
+              animation-fill-mode: both;
+      -webkit-animation-name: bounceInDown;
+              animation-name: bounceInDown;
+      -webkit-animation-delay: $canvas-open-delay; /* Chrome, Safari, Opera */
+              animation-delay: $canvas-open-delay;
+
+      -webkit-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none;
+
+      > .letter {
+        text-shadow: 2px 1px 4px rgba(0, 0, 0, 0.75);
+
+        font-family: $font-thick;
+        font-size: 800%;
+        font-weight: 700;
+
+        &.green {
+          color: #7aad6e;
+        }
+        &.yellow {
+          color: #f4ad4f;
+        }
+        &.red {
+          color: #ea826b;
+        }
+      }
+
+      > .image {
+        width: auto;
+        height: 160px;
+        vertical-align: top;
+
+        transform-origin: 50% 50%;
+      	transform: rotate(0deg);
+      	animation-name: spin;
+      	animation-duration: 12s;
+      	animation-iteration-count: infinite;
+      	animation-timing-function: ease-in-out;
+      	animation-direction: alternate;
+      }
+    }
+  }
+}

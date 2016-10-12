@@ -1,0 +1,337 @@
+@import "./../../scss/variables.scss";
+@import "./../../scss/mixin.scss";
+
+.layer-front {
+  position: relative;
+  -webkit-box-shadow: 4px 4px 4px 0px rgba(50, 50, 50, 0.75);
+     -moz-box-shadow: 4px 4px 4px 0px rgba(50, 50, 50, 0.75);
+          box-shadow: 4px 4px 4px 0px rgba(50, 50, 50, 0.75);
+
+  -webkit-transition: $front-layer-anim-duration ease-in-out;
+     -moz-transition: $front-layer-anim-duration ease-in-out;
+       -o-transition: $front-layer-anim-duration ease-in-out;
+          transition: $front-layer-anim-duration ease-in-out;
+
+  &.open {
+    -webkit-transition: 0s;
+       -moz-transition: 0s;
+         -o-transition: 0s;
+            transition: 0s;
+    > .left {
+      -webkit-box-shadow: 16px 4px 4px 0px rgba(50, 50, 50, 0.75);
+         -moz-box-shadow: 16px 4px 4px 0px rgba(50, 50, 50, 0.75);
+              box-shadow: 16px 4px 4px 0px rgba(50, 50, 50, 0.75);
+    }
+    > .right {
+      -webkit-box-shadow: -16px 4px 4px 0px rgba(50, 50, 50, 0.75);
+         -moz-box-shadow: -16px 4px 4px 0px rgba(50, 50, 50, 0.75);
+              box-shadow: -16px 4px 4px 0px rgba(50, 50, 50, 0.75);
+    }
+  }
+
+  height: 100%;
+  min-width: $front-layer-min-width;
+  background-color: #65464a;
+
+  display: -webkit-box;           /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;              /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;           /* TWEENER - IE 10 */
+  display: -webkit-flex;          /* NEW - Chrome */
+  display: flex;                  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+
+  &:hover:not(.active) {
+    &.green {
+      > .left {
+        > .title {
+          color: #ffffff;
+        }
+        background-color: #74a069;
+      }
+      > .right {
+        background-color: #6b9462;
+      }
+    }
+    &.yellow {
+      > .left {
+        > .title {
+          color: #ffffff;
+        }
+        background-color: #eda04d;
+      }
+      > .right {
+        background-color: #d59447;
+      }
+    }
+    &.red {
+      > .left {
+        > .title {
+          color: #ffffff;
+        }
+        background-color: #df7a66;
+      }
+      > .right {
+        background-color: #ca7360;
+      }
+    }
+  }
+
+  &.active {
+    &:hover {
+      > .left {
+        &:before {
+          border-width: $front-layer-handle-size $front-layer-handle-size 0 0;
+        }
+      }
+      // > .right {
+      //   &:before {
+      //     content: "";
+      //     position: absolute;
+      //     bottom: 0;
+      //     left: 0;
+      //     border-width: 0 $front-layer-handle-size $front-layer-handle-size 0;
+      //     border-style: solid;
+      //
+      //     -webkit-box-shadow: 1px -1px 2px 0px rgba(50, 50, 50, 0.5);
+      //       -moz-box-shadow: 1px -1px 2px 0px rgba(50, 50, 50, 0.5);
+      //             box-shadow: 1px -1px 2px 0px rgba(50, 50, 50, 0.5);
+      //   }
+      // }
+    }
+  }
+
+  &.green {
+    &.open {
+      background-color: #9ac48e;
+    }
+    > .left {
+      &:before {
+        border-color: #92b987 #dbecd4;
+      }
+    }
+    &.active {
+      > .left {
+        border-right: 1px solid #dbecd4;
+        background-color: #7aad6e;
+        > .title {
+          padding-top: 16px;
+          font-size: 110%;
+        }
+      }
+      > .right {
+        background-color: #7aad6e;
+      }
+    }
+    &:not(.active) {
+      > .left {
+        background-color: #7aad6e;
+      }
+      > .right {
+        background-color: #72a167;
+      }
+    }
+  }
+
+  &.yellow {
+    &.open {
+      background-color: #f7c36e;
+    }
+    > .left {
+      &:before {
+        border-color: #e9b968 #fbe5b9;
+      }
+    }
+    &.active {
+      > .left {
+        border-right: 1px solid #fbe5b9;
+        background-color: #f4ad4f;
+        > .title {
+          padding-top: 16px;
+          font-size: 110%;
+        }
+      }
+      > .right {
+        background-color: #f4ad4f;
+      }
+    }
+
+    &:not(.active) {
+      > .left {
+        background-color: #f4ad4f;
+      }
+      > .right {
+        background-color: #e2a04a;
+      }
+    }
+  }
+
+  &.red {
+    &.open {
+      background-color: #efa08b;
+    }
+    > .left {
+      &:before {
+        border-color: #e39884 #fcd2c1;
+      }
+    }
+    &.active {
+      > .left {
+        border-right: 1px solid #fcd2c1;
+        background-color: #ea826b;
+        > .title {
+          padding-top: 16px;
+          font-size: 110%;
+        }
+      }
+      > .right {
+        background-color: #ea826b;
+      }
+    }
+
+    &:not(.active) {
+      > .left {
+        background-color: #ea826b;
+      }
+      > .right {
+        background-color: #d97864;
+      }
+    }
+  }
+
+  &.active {
+    -webkit-flex-grow: 1;           /* NEW - Chrome */
+            flex-grow: 1;           /* NEW, Spec - Opera 12.1, Firefox 20+ */
+
+    > .left {
+      -webkit-transform: skewY($front-layer-default-angle); /* Chrome, Safari, Opera */
+          -ms-transform: skewY($front-layer-default-angle); /* IE 9 */
+              transform: skewY($front-layer-default-angle);
+    }
+    > .right {
+      -webkit-transform: skewY(-$front-layer-default-angle); /* Chrome, Safari, Opera */
+          -ms-transform: skewY(-$front-layer-default-angle); /* IE 9 */
+              transform: skewY(-$front-layer-default-angle);
+    }
+  }
+
+  &.open {
+    > .left {
+      z-index: 1000;
+      -webkit-transform: rotateX($front-layer-open-angle-x) rotateY($front-layer-open-angle-y);
+          -ms-transform: rotateX($front-layer-open-angle-x) rotateY($front-layer-open-angle-y);
+              transform: rotateX($front-layer-open-angle-x) rotateY($front-layer-open-angle-y);
+    }
+    > .right {
+      z-index: 1000;
+      -webkit-transform: rotateX($front-layer-open-angle-x) rotateY(-$front-layer-open-angle-y);
+          -ms-transform: rotateX($front-layer-open-angle-x) rotateY(-$front-layer-open-angle-y);
+              transform: rotateX($front-layer-open-angle-x) rotateY(-$front-layer-open-angle-y);
+    }
+  }
+
+  &:first-child > .left {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+  }
+
+  &:last-child > .right {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+
+  &:not(.active) {
+    > .left, > .right {
+
+    }
+  }
+
+
+  > .left {
+    width: 50%;
+    position: relative;
+
+    display: -webkit-box;           /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;              /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;           /* TWEENER - IE 10 */
+    display: -webkit-flex;          /* NEW - Chrome */
+    display: flex;                  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+
+    -webkit-flex-direction: column;    /* Safari 6.1+ */
+            flex-direction: column;    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+
+    > .title {
+      -webkit-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none;
+
+      -webkit-transition: $front-layer-anim-duration ease-in-out;
+         -moz-transition: $front-layer-anim-duration ease-in-out;
+           -o-transition: $front-layer-anim-duration ease-in-out;
+              transition: $front-layer-anim-duration ease-in-out;
+
+      width: $front-layer-min-width / 4;
+      margin: auto $front-layer-min-width / 8;
+      color: rgba(255, 255, 255, 0.85);
+      font-weight: 700;
+
+      > div {
+        text-align: center;
+      }
+    }
+    &:before {
+      -webkit-transition: $front-layer-anim-duration ease-in-out;
+         -moz-transition: $front-layer-anim-duration ease-in-out;
+           -o-transition: $front-layer-anim-duration ease-in-out;
+              transition: $front-layer-anim-duration ease-in-out;
+
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      border-width: 0 0 0 0;
+      border-style: solid;
+
+      -webkit-box-shadow: -1px -1px 2px 0px rgba(50, 50, 50, 0.5);
+        -moz-box-shadow: -1px -1px 2px 0px rgba(50, 50, 50, 0.5);
+              box-shadow: -1px -1px 2px 0px rgba(50, 50, 50, 0.5);
+    }
+
+    -webkit-transform: skewY($front-layer-skew-angle); /* Chrome, Safari, Opera */
+        -ms-transform: skewY($front-layer-skew-angle); /* IE 9 */
+            transform: skewY($front-layer-skew-angle);
+
+    -webkit-transition: $front-layer-anim-duration ease-in-out;
+       -moz-transition: $front-layer-anim-duration ease-in-out;
+         -o-transition: $front-layer-anim-duration ease-in-out;
+            transition: $front-layer-anim-duration ease-in-out;
+
+    -webkit-transform-origin: 0% 0%; /* Chrome, Safari, Opera */
+        -ms-transform-origin: 0% 0%; /* IE 9 */
+            transform-origin: 0% 0%;
+
+    height: 100%;
+    -webkit-flex-grow: 1;           /* NEW - Chrome */
+            flex-grow: 1;           /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    border-right: 1px solid rgba(255, 255, 255, 0.25);
+  }
+
+  > .right {
+    width: 50%;
+    -webkit-transform: skewY(-$front-layer-skew-angle); /* Chrome, Safari, Opera */
+        -ms-transform: skewY(-$front-layer-skew-angle); /* IE 9 */
+            transform: skewY(-$front-layer-skew-angle);
+
+    -webkit-transition: $front-layer-anim-duration ease-in-out;
+       -moz-transition: $front-layer-anim-duration ease-in-out;
+         -o-transition: $front-layer-anim-duration ease-in-out;
+            transition: $front-layer-anim-duration ease-in-out;
+
+    -webkit-transform-origin: 100% 0%; /* Chrome, Safari, Opera */
+        -ms-transform-origin: 100% 0%; /* IE 9 */
+            transform-origin: 100% 0%;
+
+    height: 100%;
+    -webkit-flex-grow: 1;           /* NEW - Chrome */
+            flex-grow: 1;           /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  }
+}

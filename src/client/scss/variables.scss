@@ -1,0 +1,108 @@
+@import "./../scss/fonts.scss";
+
+$white: rgba(255, 255, 255, 1);
+$grey: rgba(125, 125, 125, 1);
+$darkgrey: rgba(35, 31, 32, 1);
+$black: rgba(0, 0, 0, 1);
+
+$font-normal: 'Open Sans', sans-serif;
+$font-narrow: 'Open Sans Condensed', sans-serif;
+$font-thick: 'Montserrat Alternates', sans-serif;
+
+$font-x-large: 2em;
+$font-large: 1.5em;
+$font-medium: 1em;
+$font-small: 0.75em;
+$font-x-small: 0.5em;
+
+$front-layer-min-width: 64px;
+$front-layer-anim-duration: 0.25s;
+$front-layer-skew-angle: 45deg;
+$front-layer-default-angle: 0deg;
+$front-layer-handle-size: 12px;
+$front-layer-open-angle-x: 3.5deg;
+$front-layer-open-angle-y: 91deg;
+
+$canvas-open-delay: 1s;
+$canvas-fade-in-duration: 1s;
+
+@keyframes fade-in {
+ to {
+   opacity: 1;
+ }
+}
+
+@keyframes draw {
+ to {
+   stroke-dashoffset: 0;
+ }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(-5deg);
+  }
+  80% {
+    transform: rotate(725deg);
+  }
+	90% {
+    transform: rotate(720deg);
+  }
+  100% {
+    transform: rotate(720deg);
+  }
+}
+
+@keyframes bounceInDown {
+  from, 60%, 75%, 90%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -3000px, 0);
+    transform: translate3d(0, -3000px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 25px, 0);
+    transform: translate3d(0, 25px, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, 5px, 0);
+  }
+
+  to {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+
+@keyframes drawLine {
+  to { stroke-dashoffset: 0; }
+}
+
+@keyframes fadeStroke {
+  to { stroke-opacity: 0; }
+}
+
+@keyframes fillIn {
+  from { fill-opacity: 0; }
+  to { fill-opacity: 0.85; }
+}

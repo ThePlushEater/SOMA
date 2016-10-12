@@ -1,0 +1,17 @@
+@import "./../../scss/variables.scss";
+@import "./../../scss/mixin.scss";
+
+.canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+  opacity: 0;
+  animation: fade-in $canvas-fade-in-duration forwards;
+
+  -webkit-animation-delay: $canvas-open-delay; /* Chrome, Safari, Opera */
+          animation-delay: $canvas-open-delay;
+
+}

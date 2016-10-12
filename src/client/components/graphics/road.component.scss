@@ -1,0 +1,8 @@
+@import "./../../scss/variables.scss";
+@import "./../../scss/mixin.scss";
+
+.road {
+  animation: draw 2s forwards;
+  -webkit-animation-delay: $canvas-open-delay; /* Chrome, Safari, Opera */
+          animation-delay: $canvas-open-delay;
+}

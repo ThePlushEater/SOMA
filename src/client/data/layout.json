@@ -1,0 +1,28 @@
+{
+  "home": {
+    "title": "SOMA",
+    "description": "Somatic Engagement"
+  },
+  "skybox": {
+    "themeColor": "#65464a"
+  },
+  "front": [
+    {
+      "id": 0,
+      "theme": "green",
+      "title": "overview"
+    },
+    {
+      "id": 1,
+      "theme": "yellow",
+      "title": "project"
+
+    },
+    {
+      "id": 2,
+      "theme": "red",
+      "title": "research"
+
+    }
+  ]
+}
