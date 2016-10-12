@@ -7,7 +7,6 @@ export default class Cloud extends React.Component {
   componentWillMount() {
     this.svg = null;
     this.loaded = false;
-    this.coords = null;
     this.setState({
       path: "M208.3,57.5c61.6-18.3,77.2,72.7,22,81c-22,3.3-58.1,0-92,0c-34.9,0-71,2.5-91,0c-23.1-2.8-50.4-19.5-47-46  c3.3-26,34.7-38.4,67-37c10.3-27.8,28.6-51.5,62-55C172.2-3.9,199.9,22.2,208.3,57.5z",
       delay: [2, 3, 3, 4],
@@ -85,5 +84,3 @@ export default class Cloud extends React.Component {
     return null;
   }
 }
-
-        // <line className="cloud" {...coords} stroke="#ffffff" strokeWidth={4} strokeLinejoin="round" strokeLinecap="round" strokeMiterlimit="10" strokeDasharray={this.props.width} strokeDashoffset={this.props.width} />

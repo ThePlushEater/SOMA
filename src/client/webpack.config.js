@@ -20,7 +20,7 @@ var vendorList = [
 ];
 
 var corePluginList = [
-  new webpack.optimize.CommonsChunkPlugin(/* chunkName= */"vendor", /* filename= */"vendor-bundle.js"),
+  new webpack.optimize.CommonsChunkPlugin(/* chunkName= */"vendor", /* filename= */"./js/vendor-bundle.js"),
   // new webpack.ProvidePlugin({
   //   // 'googletile': 'imports?this=>global!exports?googletile!googletile',
   //   // 'leaflet-canvas-marker': 'imports?this=>global!exports?leaflet-canvas-marker!leaflet-canvas-marker',
@@ -47,7 +47,7 @@ var corePluginList = [
 
 var devPluginList = [
   devDefinePlugin,
-  new ExtractTextPlugin('./../css/app-bundle.css', {
+  new ExtractTextPlugin('./css/app-bundle.css', {
     allChunks: true
   }),
   new BrowserSyncPlugin({
@@ -63,7 +63,7 @@ var devPluginList = [
 ];
 
 var loaderList = [
-  { test: /\.png$/, loader: "url-loader?limit=10000&name=./images/[hash].[ext]" },
+  { test: /\.png$/, loader: "file-loader?limit=10000&name=./images/[hash].[ext]" },
   { test: /\.jpg$/, loader: "file-loader?limit=10000&name=./images/[hash].[ext]" },
   { test: /\.jsx?/, exclude: MODULES_DIR, loader: 'babel' },
   { test: /\.scss$/, loader: ExtractTextPlugin.extract('css!sass') },
@@ -80,8 +80,8 @@ var config = {
     vendor: vendorList
   },
   output: {
-    path: path.join(BUILD_DIR, "./js/"),
-    filename: '[name]-bundle.js',
+    path: BUILD_DIR,
+    filename: './js/[name]-bundle.js',
   },
   plugins: corePluginList.concat(devPluginList),
   devtool: 'eval',

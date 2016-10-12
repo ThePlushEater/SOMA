@@ -5,6 +5,7 @@ import { connect } from "react-redux";
 import store from "./../../store/store";
 import Road from "./../graphics/road.component";
 import Cloud from "./../graphics/cloud.component";
+import CharacterMain from "./../characters/character-main.component";
 
 require('./home-canvas.component.scss');
 
@@ -34,6 +35,8 @@ export default class HomeCanvas extends  React.Component {
       <Cloud id={5} coords={{x: this.state.width * 0.05, y: this.state.height * 0.175, scale: 0.5}} width={this.state.width} height={this.state.height} animating={this.props.focus} />
       <Cloud id={6} coords={{x: this.state.width * 0.9, y: this.state.height * 0.125, scale: 0.35}} width={this.state.width} height={this.state.height} animating={this.props.focus} />
       <Cloud id={7} coords={{x: this.state.width * 0.35, y: this.state.height * 0.025, scale: 0.325}} width={this.state.width} height={this.state.height} animating={this.props.focus} />
+
+      <CharacterMain id={1} coords={{x: this.state.width * 0.15, y: this.state.height * 0.95, scale: 1}} width={this.state.width} height={this.state.height} animating={this.props.focus} />
     </svg>;
   }
 }
