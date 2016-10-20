@@ -10,6 +10,9 @@ import Cloud from "./../cloud/cloud.component";
 import Building from "./../building/building.component";
 import Mountain from "./../mountain/mountain.component";
 import Panel from "./../panel/panel.component";
+import Pillar from "./../pillar/pillar.component";
+import Roof from "./../roof/roof.component";
+import Bookshelf from "./../bookshelf/bookshelf.component";
 
 
 require('./dashboard.component.scss');
@@ -58,6 +61,12 @@ export default class Dashboard extends React.Component {
         return <Mountain key={"background-" + index} mountain={item} />;
       } else if (item.type == "PANEL") {
         return <Panel key={"background-" + index} panel={item} />;
+      } else if (item.type == "PILLAR") {
+        return <Pillar key={"background-" + index} pillar={item} />;
+      } else if (item.type == "ROOF") {
+        return <Roof key={"background-" + index} roof={item} />;
+      } else if (item.type == "BOOKSHELF") {
+        return <Bookshelf key={"background-" + index} bookshelf={item} />;
       }
     });
     return (

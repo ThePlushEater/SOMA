@@ -193,6 +193,77 @@
 
   {
     "type": "CLOUD",
+    "position": 2,
+    "coordinate": {
+      "x": 10,
+      "y": 8
+    },
+    "size": 120,
+    "delay": 0.15
+  },
+  {
+    "type": "CLOUD",
+    "position": 2,
+    "coordinate": {
+      "x": 20,
+      "y": 3
+    },
+    "size": 100,
+    "delay": 0.35
+  },
+  {
+    "type": "CLOUD",
+    "position": 2,
+    "coordinate": {
+      "x": 22,
+      "y": 12
+    },
+    "size": 200,
+    "delay": 0.45
+  },
+  {
+    "type": "CLOUD",
+    "position": 2,
+    "coordinate": {
+      "x": 35,
+      "y": 7
+    },
+    "size": 100,
+    "delay": 0.35
+  },
+  {
+    "type": "CLOUD",
+    "position": 2,
+    "coordinate": {
+      "x": 55,
+      "y": 10
+    },
+    "size": 75,
+    "delay": 0.35
+  },
+  {
+    "type": "CLOUD",
+    "position": 2,
+    "coordinate": {
+      "x": 70,
+      "y": 5
+    },
+    "size": 50,
+    "delay": 0.15
+  },
+  {
+    "type": "CLOUD",
+    "position": 2,
+    "coordinate": {
+      "x": 80,
+      "y": 15
+    },
+    "size": 80,
+    "delay": 0.25
+  },
+
+  {
+    "type": "CLOUD",
     "position": 3,
     "coordinate": {
       "x": 10,
@@ -288,7 +359,7 @@
     "image": 1,
     "position": 0,
     "coordinate": {
-      "x": 40,
+      "x": 2,
       "y": 20
     },
     "size": 40,
@@ -299,10 +370,10 @@
     "image": 2,
     "position": 0,
     "coordinate": {
-      "x": 45,
+      "x": 25,
       "y": 20
     },
-    "size": 50,
+    "size": 60,
     "delay": 0.25
   },
   {
@@ -310,7 +381,7 @@
     "image": 3,
     "position": 0,
     "coordinate": {
-      "x": 80,
+      "x": 90,
       "y": 20
     },
     "size": 70,
@@ -321,7 +392,7 @@
     "image": 4,
     "position": 0,
     "coordinate": {
-      "x": 70,
+      "x": 80,
       "y": 20
     },
     "size": 100,
@@ -332,7 +403,7 @@
     "image": 5,
     "position": 0,
     "coordinate": {
-      "x": 55,
+      "x": 10,
       "y": 20
     },
     "size": 120,
@@ -410,10 +481,115 @@
   {
     "type": "PANEL",
     "image": 1,
+    "text": "TEMP TEXT",
+    "position": 1,
+    "coordinate": {
+      "x": 35,
+      "y": 20
+    },
+    "size": 200,
+    "delay": 0.2
+  },
+
+  {
+    "type": "PANEL",
+    "image": 1,
     "text": "VISIT OUR PLAYGROUND",
     "position": 0,
     "coordinate": {
       "x": 13,
+      "y": 20
+    },
+    "size": 200,
+    "delay": 0.2
+  },
+
+
+  {
+    "type": "PILLAR",
+    "image": 1,
+    "position": 2,
+    "coordinate": {
+      "x": 2,
+      "y": 20
+    },
+    "size": 50,
+    "delay": 0.1
+  },
+  {
+    "type": "PILLAR",
+    "image": 1,
+    "position": 2,
+    "coordinate": {
+      "x": 90,
+      "y": 20
+    },
+    "size": 50,
+    "delay": 0.1
+  },
+  {
+    "type": "ROOF",
+    "image": 1,
+    "position": 2,
+    "coordinate": {
+      "x": 0,
+      "y": 68.5
+    },
+    "size": 100,
+    "delay": 0.1
+  },
+
+  {
+    "type": "BOOKSHELF",
+    "image": 1,
+    "position": 2,
+    "coordinate": {
+      "x": 12,
+      "y": 20
+    },
+    "size": 200,
+    "delay": 0.1
+  },
+  {
+    "type": "BOOKSHELF",
+    "image": 2,
+    "position": 2,
+    "coordinate": {
+      "x": 30,
+      "y": 20
+    },
+    "size": 180,
+    "delay": 0.1
+  },
+  {
+    "type": "BOOKSHELF",
+    "image": 2,
+    "position": 2,
+    "coordinate": {
+      "x": 65,
+      "y": 20
+    },
+    "size": 220,
+    "delay": 0.1
+  },
+  {
+    "type": "BOOKSHELF",
+    "image": 1,
+    "position": 2,
+    "coordinate": {
+      "x": 75,
+      "y": 20
+    },
+    "size": 190,
+    "delay": 0.1
+  },
+  {
+    "type": "PANEL",
+    "image": 1,
+    "text": "RESEARCH",
+    "position": 2,
+    "coordinate": {
+      "x": 45,
       "y": 20
     },
     "size": 200,

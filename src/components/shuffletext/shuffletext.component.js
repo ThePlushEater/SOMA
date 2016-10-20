@@ -7,8 +7,8 @@ export default class ShuffleText extends React.Component {
     this.interval = null;
     this.setState({
       index: 0,
-      step: 4,
-      fps: 60,
+      step: 3,
+      fps: 40,
       text: "",
     });
   }
