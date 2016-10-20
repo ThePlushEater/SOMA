@@ -17,6 +17,7 @@ import Bookshelf from "./../bookshelf/bookshelf.component";
 
 import Seesaw from "./../actors/seesaw.component";
 import Junglegym from "./../actors/junglegym.component";
+import Slide from "./../actors/slide.component";
 
 
 require('./dashboard.component.scss');
@@ -80,6 +81,8 @@ export default class Dashboard extends React.Component {
         return <Seesaw key={"actor-" + index} actor={item} />;
       } else if (item.type == "JUNGLEGYM") {
         return <Junglegym key={"actor-" + index} actor={item} />;
+      } else if (item.type == "SLIDE") {
+        return <Slide key={"actor-" + index} actor={item} />;
       }
     });
     return (

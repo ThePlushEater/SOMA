@@ -18,5 +18,15 @@
     },
     "size": 300,
     "delay": 0.25
+  },
+  {
+    "type": "SLIDE",
+    "position": 0,
+    "coordinate": {
+      "x": 80,
+      "y": 18
+    },
+    "size": 200,
+    "delay": 0.25
   }
 ]
