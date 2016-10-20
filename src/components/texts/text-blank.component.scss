@@ -1,0 +1,23 @@
+@import "./../../scss/variables.scss";
+
+.text-blank {
+  position: absolute;
+  font-family: $font-bold;
+  color: $gray;
+
+  -webkit-transition: $background-animation-duration;
+     -moz-transition: $background-animation-duration;
+          transition: $background-animation-duration;
+  -webkit-animation-timing-function: ease-out; /* Chrome, Safari, Opera */
+          animation-timing-function: ease-out;
+
+  &.active {
+
+  }
+
+  &.passed {
+    left: -100% !important;
+    // -webkit-transition-delay: 0.25s !important; /* Safari */
+    //         transition-delay: 0.25s !important;
+  }
+}

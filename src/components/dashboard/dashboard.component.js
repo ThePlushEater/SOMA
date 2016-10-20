@@ -5,6 +5,7 @@ import { connect } from "react-redux";
 import { fetchCharacter } from "./../../actions/characterActions";
 import { fetchBackgrounds } from "./../../actions/backgroundsActions";
 import { fetchActors } from "./../../actions/actorsActions";
+import { fetchTexts } from "./../../actions/textsActions";
 import Character from "./../character/character.component";
 import Ground from "./../ground/ground.component";
 import Cloud from "./../cloud/cloud.component";
@@ -19,6 +20,8 @@ import Seesaw from "./../actors/seesaw.component";
 import Junglegym from "./../actors/junglegym.component";
 import Slide from "./../actors/slide.component";
 
+import TextBlank from "./../texts/text-blank.component";
+
 
 require('./dashboard.component.scss');
 
@@ -28,6 +31,7 @@ require('./dashboard.component.scss');
     character: store.character.character,
     backgrounds: store.backgrounds.backgrounds,
     actors: store.actors.actors,
+    texts: store.texts.texts,
     localization: store.localization.localization,
   }
 })
@@ -39,6 +43,7 @@ export default class Dashboard extends React.Component {
     this.props.dispatch(fetchCharacter());
     this.props.dispatch(fetchBackgrounds());
     this.props.dispatch(fetchActors());
+    this.props.dispatch(fetchTexts());
   }
   componentDidMount() {
 
@@ -53,7 +58,7 @@ export default class Dashboard extends React.Component {
 
   }
   render() {
-    let character, backgrounds, actors;
+    let character, backgrounds, actors, texts;
     if (this.props.character) {
       character = <Character character={this.props.character} />;
     }
@@ -85,10 +90,16 @@ export default class Dashboard extends React.Component {
         return <Slide key={"actor-" + index} actor={item} />;
       }
     });
+    texts = this.props.texts.map((item, index) => {
+      if (item.type == "BLANK") {
+        return <TextBlank key={"text" + index} item={item} />
+      }
+    });
     return (
       <div className="dashboard">
         {backgrounds}
         {actors}
+        {texts}
         {character}
       </div>
     )

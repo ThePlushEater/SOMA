@@ -99,8 +99,8 @@ export default class Slide extends React.Component {
     return (
       <div style={style} className={"slide" + " pos-" + this.props.actor.position + active}>
         <div style={wrapperStyle} className="wrapper">
-          <img className={"actor" + status} src="./slide-actor-1.png" onMouseEnter={this.prepare.bind(this)} onClick={this.animate.bind(this)} onMouseOut={this.reset.bind(this)} />
-          <img className="base left" src="./slide-base.png" />
+          <img className={"actor" + status} src="./slide-actor-1.png" />
+          <img className="base left" src="./slide-base.png" onMouseEnter={this.prepare.bind(this)} onClick={this.animate.bind(this)} onMouseOut={this.reset.bind(this)} />
         </div>
       </div>
     )

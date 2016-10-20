@@ -17,6 +17,7 @@ export default class Junglegym extends React.Component {
     super();
     this.state = {
       direction: "LEFT",
+      jumping: false,
       curStep: 0,
       maxStep: 15,
     };
@@ -59,8 +60,15 @@ export default class Junglegym extends React.Component {
       direction: direction,
     });
   }
+
+  onHover(value, event) {
+    this.setState({
+      jumping: value,
+    });
+  }
   render() {
     let active = "";
+    let jumping = "";
     let delay = "0s";
     let left = 0;
     let bottom = 0;
@@ -79,7 +87,9 @@ export default class Junglegym extends React.Component {
 
       bottom = this.props.actor.coordinate.y + "%";
       width = this.props.actor.size;
-
+    }
+    if (this.state.jumping) {
+      jumping = " jumping";
     }
     const style = {
       width: width,
@@ -94,10 +104,10 @@ export default class Junglegym extends React.Component {
 
     return (
       <div style={style} className={"junglegym" + " pos-" + this.props.actor.position + active}>
-        <div style={wrapperStyle} className="wrapper">
-          <img className="base left" src="./junglegym-base-left.png" onClick={this.animate.bind(this)} />
-          <img className={"actor" + step} src="./junglegym-actor.png" onClick={this.animate.bind(this)} />
-          <img className="base right" src="./junglegym-base-right.png" onClick={this.animate.bind(this)} />
+        <div style={wrapperStyle} className="wrapper" onMouseEnter={this.onHover.bind(this, true)} onMouseLeave={this.onHover.bind(this, false)} onClick={this.animate.bind(this)}>
+          <img className="base left" src="./junglegym-base-left.png"  />
+          <img className={"actor" + step + jumping} src="./junglegym-actor.png" />
+          <img className="base right" src="./junglegym-base-right.png" />
         </div>
       </div>
     )

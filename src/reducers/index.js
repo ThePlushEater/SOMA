@@ -4,6 +4,7 @@ import localization from "./localizationReducer";
 import character from "./characterReducer";
 import backgrounds from "./backgroundsReducer";
 import actors from "./actorsReducer";
+import texts from "./textsReducer";
 
 
 export default combineReducers({
@@ -11,4 +12,5 @@ export default combineReducers({
   character,
   backgrounds,
   actors,
+  texts,
 });

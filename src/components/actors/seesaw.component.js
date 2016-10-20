@@ -17,9 +17,11 @@ export default class Seesaw extends React.Component {
     super();
     this.state = {
       animating: false,
-      direction: "LEFT"
+      direction: "LEFT",
+      stack: 0,
     };
     this.timer = null;
+    this.timer2 = null;
   }
   componentWillMount() {
 
@@ -36,7 +38,47 @@ export default class Seesaw extends React.Component {
   componentWillUnmount() {
 
   }
+  onClick(event) {
+    if (this.timer) {
+      clearInterval(this.timer);
+    }
+    if (this.timer2) {
+      clearTimeout(this.timer2);
+    }
+    if (this.state.direction == "LEFT") {
+      this.setState({
+        animating: true,
+        direction: "RIGHT",
+        stack: this.state.stack + 1,
+      });
+    } else {
+      this.setState({
+        animating: true,
+        direction: "LEFT",
+        stack: this.state.stack + 1,
+      });
+    }
+    this.timer = setInterval(function() {
+      if (this.state.direction == "LEFT") {
+        this.setState({
+          direction: "RIGHT",
+        });
+      } else {
+        this.setState({
+          direction: "LEFT",
+        });
+      }
+    }.bind(this), 1000);
+
+    this.timer2 = setTimeout(function() {
+      this.setState({
+        animating: false,
+        stack: 0,
+      });
+    }.bind(this), 1000 * (this.state.stack + 1));
+  }
   animate(value, event) {
+    return;
     if (!value) {
       if (this.timer) {
         clearInterval(this.timer);
@@ -53,7 +95,7 @@ export default class Seesaw extends React.Component {
         });
       }
     }
-    
+
     if (value) {
       this.setState({
         animating: value,
@@ -70,8 +112,6 @@ export default class Seesaw extends React.Component {
         }
       }.bind(this), 1000);
     }
-
-
   }
   render() {
     let active = "";
@@ -112,7 +152,7 @@ export default class Seesaw extends React.Component {
     return (
       <div style={style} className={"seesaw" + " pos-" + this.props.actor.position + active}>
         <div className="wrapper">
-          <img className={"actors" + animate} src="./seesaw-actors.png" onMouseEnter={this.animate.bind(this, true)} onMouseOut={this.animate.bind(this, false)} />
+          <img className={"actors" + animate} src="./seesaw-actors.png" onMouseEnter={this.animate.bind(this, true)} onMouseOut={this.animate.bind(this, false)} onClick={this.onClick.bind(this)}/>
           <img className="base" src="./seesaw-base.png" />
         </div>
       </div>

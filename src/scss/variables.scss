@@ -36,3 +36,10 @@ $background-animation-duration: 1.5s;
 	90% { transform: rotate(720deg); }
   100% { transform: rotate(720deg); }
 }
+
+@keyframes jump {
+  0% { transform: translateY(0); }
+  40% { transform: translateY(-4px); }
+  80% { transform: translateY(0px); }
+  100% { transform: translateY(0); }
+}
