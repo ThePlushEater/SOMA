@@ -16,6 +16,7 @@ import Roof from "./../roof/roof.component";
 import Bookshelf from "./../bookshelf/bookshelf.component";
 
 import Seesaw from "./../actors/seesaw.component";
+import Junglegym from "./../actors/junglegym.component";
 
 
 require('./dashboard.component.scss');
@@ -77,6 +78,8 @@ export default class Dashboard extends React.Component {
     actors = this.props.actors.map((item, index) => {
       if (item.type == "SEESAW") {
         return <Seesaw key={"actor-" + index} actor={item} />;
+      } else if (item.type == "JUNGLEGYM") {
+        return <Junglegym key={"actor-" + index} actor={item} />;
       }
     });
     return (

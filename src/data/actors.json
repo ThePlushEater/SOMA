@@ -8,5 +8,15 @@
     },
     "size": 150,
     "delay": 0.25
+  },
+  {
+    "type": "JUNGLEGYM",
+    "position": 0,
+    "coordinate": {
+      "x": 50,
+      "y": 18
+    },
+    "size": 300,
+    "delay": 0.25
   }
 ]
