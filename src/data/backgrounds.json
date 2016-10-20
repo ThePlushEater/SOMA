@@ -1,0 +1,422 @@
+[
+  {
+    "type": "GROUND",
+    "position": 0,
+    "delay": 0.1
+  },
+  {
+    "type": "GROUND",
+    "position": 1,
+    "delay": 0.1
+  },
+  {
+    "type": "GROUND",
+    "position": 2,
+    "delay": 0.1
+  },
+  {
+    "type": "GROUND",
+    "position": 3,
+    "delay": 0.1
+  },
+  {
+    "type": "CLOUD",
+    "position": 0,
+    "coordinate": {
+      "x": 10,
+      "y": 15
+    },
+    "size": 120,
+    "delay": 0.5
+  },
+  {
+    "type": "CLOUD",
+    "position": 0,
+    "coordinate": {
+      "x": 20,
+      "y": 7
+    },
+    "size": 100,
+    "delay": 0.45
+  },
+  {
+    "type": "CLOUD",
+    "position": 0,
+    "coordinate": {
+      "x": 25,
+      "y": 17
+    },
+    "size": 200,
+    "delay": 0.25
+  },
+  {
+    "type": "CLOUD",
+    "position": 0,
+    "coordinate": {
+      "x": 35,
+      "y": 10
+    },
+    "size": 100,
+    "delay": 0.5
+  },
+  {
+    "type": "CLOUD",
+    "position": 0,
+    "coordinate": {
+      "x": 45,
+      "y": 25
+    },
+    "size": 200,
+    "delay": 0.35
+  },
+  {
+    "type": "CLOUD",
+    "position": 0,
+    "coordinate": {
+      "x": 55,
+      "y": 15
+    },
+    "size": 75,
+    "delay": 0.45
+  },
+  {
+    "type": "CLOUD",
+    "position": 0,
+    "coordinate": {
+      "x": 70,
+      "y": 10
+    },
+    "size": 50,
+    "delay": 0.5
+  },
+  {
+    "type": "CLOUD",
+    "position": 0,
+    "coordinate": {
+      "x": 85,
+      "y": 25
+    },
+    "size": 150,
+    "delay": 0.35
+  },
+  {
+    "type": "CLOUD",
+    "position": 0,
+    "coordinate": {
+      "x": 80,
+      "y": 20
+    },
+    "size": 80,
+    "delay": 0.5
+  },
+
+  {
+    "type": "CLOUD",
+    "position": 1,
+    "coordinate": {
+      "x": 10,
+      "y": 15
+    },
+    "size": 120,
+    "delay": 0.15
+  },
+  {
+    "type": "CLOUD",
+    "position": 1,
+    "coordinate": {
+      "x": 20,
+      "y": 7
+    },
+    "size": 100,
+    "delay": 0.35
+  },
+  {
+    "type": "CLOUD",
+    "position": 1,
+    "coordinate": {
+      "x": 25,
+      "y": 17
+    },
+    "size": 200,
+    "delay": 0.45
+  },
+  {
+    "type": "CLOUD",
+    "position": 1,
+    "coordinate": {
+      "x": 35,
+      "y": 10
+    },
+    "size": 100,
+    "delay": 0.35
+  },
+  {
+    "type": "CLOUD",
+    "position": 1,
+    "coordinate": {
+      "x": 55,
+      "y": 15
+    },
+    "size": 75,
+    "delay": 0.35
+  },
+  {
+    "type": "CLOUD",
+    "position": 1,
+    "coordinate": {
+      "x": 70,
+      "y": 10
+    },
+    "size": 50,
+    "delay": 0.15
+  },
+  {
+    "type": "CLOUD",
+    "position": 1,
+    "coordinate": {
+      "x": 85,
+      "y": 25
+    },
+    "size": 150,
+    "delay": 0.45
+  },
+  {
+    "type": "CLOUD",
+    "position": 1,
+    "coordinate": {
+      "x": 80,
+      "y": 20
+    },
+    "size": 80,
+    "delay": 0.25
+  },
+
+  {
+    "type": "CLOUD",
+    "position": 3,
+    "coordinate": {
+      "x": 10,
+      "y": 15
+    },
+    "size": 120,
+    "delay": 0.45
+  },
+  {
+    "type": "CLOUD",
+    "position": 3,
+    "coordinate": {
+      "x": 20,
+      "y": 7
+    },
+    "size": 100,
+    "delay": 0.25
+  },
+  {
+    "type": "CLOUD",
+    "position": 3,
+    "coordinate": {
+      "x": 25,
+      "y": 17
+    },
+    "size": 200,
+    "delay": 0.5
+  },
+  {
+    "type": "CLOUD",
+    "position": 3,
+    "coordinate": {
+      "x": 35,
+      "y": 10
+    },
+    "size": 100,
+    "delay": 0.35
+  },
+  {
+    "type": "CLOUD",
+    "position": 3,
+    "coordinate": {
+      "x": 45,
+      "y": 25
+    },
+    "size": 200,
+    "delay": 0.15
+  },
+  {
+    "type": "CLOUD",
+    "position": 3,
+    "coordinate": {
+      "x": 55,
+      "y": 15
+    },
+    "size": 75,
+    "delay": 0.35
+  },
+  {
+    "type": "CLOUD",
+    "position": 3,
+    "coordinate": {
+      "x": 70,
+      "y": 10
+    },
+    "size": 50,
+    "delay": 0.45
+  },
+  {
+    "type": "CLOUD",
+    "position": 3,
+    "coordinate": {
+      "x": 85,
+      "y": 25
+    },
+    "size": 150,
+    "delay": 0.5
+  },
+  {
+    "type": "CLOUD",
+    "position": 3,
+    "coordinate": {
+      "x": 80,
+      "y": 20
+    },
+    "size": 80,
+    "delay": 0.25
+  },
+
+
+  {
+    "type": "BUILDING",
+    "image": 1,
+    "position": 0,
+    "coordinate": {
+      "x": 40,
+      "y": 20
+    },
+    "size": 40,
+    "delay": 0.25
+  },
+  {
+    "type": "BUILDING",
+    "image": 2,
+    "position": 0,
+    "coordinate": {
+      "x": 45,
+      "y": 20
+    },
+    "size": 50,
+    "delay": 0.25
+  },
+  {
+    "type": "BUILDING",
+    "image": 3,
+    "position": 0,
+    "coordinate": {
+      "x": 80,
+      "y": 20
+    },
+    "size": 70,
+    "delay": 0.35
+  },
+  {
+    "type": "BUILDING",
+    "image": 4,
+    "position": 0,
+    "coordinate": {
+      "x": 70,
+      "y": 20
+    },
+    "size": 100,
+    "delay": 0.35
+  },
+  {
+    "type": "BUILDING",
+    "image": 5,
+    "position": 0,
+    "coordinate": {
+      "x": 55,
+      "y": 20
+    },
+    "size": 120,
+    "delay": 0.25
+  },
+
+
+  {
+    "type": "MOUNTAIN",
+    "image": 1,
+    "position": 1,
+    "coordinate": {
+      "x": 2,
+      "y": 20
+    },
+    "size": 300,
+    "delay": 0.5
+  },
+  {
+    "type": "MOUNTAIN",
+    "image": 2,
+    "position": 1,
+    "coordinate": {
+      "x": 15,
+      "y": 20
+    },
+    "size": 520,
+    "delay": 0.3
+  },
+  {
+    "type": "MOUNTAIN",
+    "image": 3,
+    "position": 1,
+    "coordinate": {
+      "x": 70,
+      "y": 20
+    },
+    "size": 450,
+    "delay": 0.15
+  },
+  {
+    "type": "MOUNTAIN",
+    "image": 4,
+    "position": 1,
+    "coordinate": {
+      "x": 50,
+      "y": 20
+    },
+    "size": 320,
+    "delay": 0.25
+  },
+  {
+    "type": "MOUNTAIN",
+    "image": 5,
+    "position": 1,
+    "coordinate": {
+      "x": 60,
+      "y": 35
+    },
+    "size": 300,
+    "delay": 0.35
+  },
+  {
+    "type": "MOUNTAIN",
+    "image": 6,
+    "position": 1,
+    "coordinate": {
+      "x": 5,
+      "y": 35
+    },
+    "size": 250,
+    "delay": 0.6
+  },
+
+  {
+    "type": "PANEL",
+    "image": 1,
+    "text": "VISIT OUR PLAYGROUND",
+    "position": 0,
+    "coordinate": {
+      "x": 13,
+      "y": 20
+    },
+    "size": 200,
+    "delay": 0.2
+  }
+]

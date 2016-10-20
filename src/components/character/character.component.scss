@@ -1,0 +1,32 @@
+@import "./../../scss/variables.scss";
+
+.character {
+  position: absolute;
+  left: 5%;
+  top: 70%;
+
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+
+  -webkit-transition: $character-animation-duration;
+     -moz-transition: $character-animation-duration;
+          transition: $character-animation-duration;
+  -webkit-animation-timing-function: ease-out; /* Chrome, Safari, Opera */
+          animation-timing-function: ease-out;
+
+  &.pos-0 {
+    left: 5%;
+  }
+  &.pos-1 {
+    left: 30%;
+  }
+  &.pos-2 {
+    left: 60%;
+  }
+  &.pos-3 {
+    left: 85%;
+  }
+}
