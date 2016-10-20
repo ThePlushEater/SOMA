@@ -21,7 +21,7 @@
   },
   {
     "type": "CLOUD",
-    "position": 0,
+    "position": 1,
     "coordinate": {
       "x": 10,
       "y": 15
@@ -31,7 +31,7 @@
   },
   {
     "type": "CLOUD",
-    "position": 0,
+    "position": 1,
     "coordinate": {
       "x": 20,
       "y": 7
@@ -41,7 +41,7 @@
   },
   {
     "type": "CLOUD",
-    "position": 0,
+    "position": 1,
     "coordinate": {
       "x": 25,
       "y": 17
@@ -51,7 +51,7 @@
   },
   {
     "type": "CLOUD",
-    "position": 0,
+    "position": 1,
     "coordinate": {
       "x": 35,
       "y": 10
@@ -61,7 +61,7 @@
   },
   {
     "type": "CLOUD",
-    "position": 0,
+    "position": 1,
     "coordinate": {
       "x": 45,
       "y": 25
@@ -71,7 +71,7 @@
   },
   {
     "type": "CLOUD",
-    "position": 0,
+    "position": 1,
     "coordinate": {
       "x": 55,
       "y": 15
@@ -81,7 +81,7 @@
   },
   {
     "type": "CLOUD",
-    "position": 0,
+    "position": 1,
     "coordinate": {
       "x": 70,
       "y": 10
@@ -91,7 +91,7 @@
   },
   {
     "type": "CLOUD",
-    "position": 0,
+    "position": 1,
     "coordinate": {
       "x": 85,
       "y": 25
@@ -101,7 +101,7 @@
   },
   {
     "type": "CLOUD",
-    "position": 0,
+    "position": 1,
     "coordinate": {
       "x": 80,
       "y": 20
@@ -112,7 +112,7 @@
 
   {
     "type": "CLOUD",
-    "position": 1,
+    "position": 0,
     "coordinate": {
       "x": 10,
       "y": 15
@@ -122,7 +122,7 @@
   },
   {
     "type": "CLOUD",
-    "position": 1,
+    "position": 0,
     "coordinate": {
       "x": 20,
       "y": 7
@@ -132,7 +132,7 @@
   },
   {
     "type": "CLOUD",
-    "position": 1,
+    "position": 0,
     "coordinate": {
       "x": 25,
       "y": 17
@@ -142,7 +142,7 @@
   },
   {
     "type": "CLOUD",
-    "position": 1,
+    "position": 0,
     "coordinate": {
       "x": 35,
       "y": 10
@@ -152,7 +152,7 @@
   },
   {
     "type": "CLOUD",
-    "position": 1,
+    "position": 0,
     "coordinate": {
       "x": 55,
       "y": 15
@@ -162,7 +162,7 @@
   },
   {
     "type": "CLOUD",
-    "position": 1,
+    "position": 0,
     "coordinate": {
       "x": 70,
       "y": 10
@@ -172,7 +172,7 @@
   },
   {
     "type": "CLOUD",
-    "position": 1,
+    "position": 0,
     "coordinate": {
       "x": 85,
       "y": 25
@@ -182,7 +182,7 @@
   },
   {
     "type": "CLOUD",
-    "position": 1,
+    "position": 0,
     "coordinate": {
       "x": 80,
       "y": 20
@@ -357,7 +357,7 @@
   {
     "type": "BUILDING",
     "image": 1,
-    "position": 0,
+    "position": 1,
     "coordinate": {
       "x": 2,
       "y": 20
@@ -368,7 +368,7 @@
   {
     "type": "BUILDING",
     "image": 2,
-    "position": 0,
+    "position": 1,
     "coordinate": {
       "x": 25,
       "y": 20
@@ -379,7 +379,7 @@
   {
     "type": "BUILDING",
     "image": 3,
-    "position": 0,
+    "position": 1,
     "coordinate": {
       "x": 90,
       "y": 20
@@ -390,7 +390,7 @@
   {
     "type": "BUILDING",
     "image": 4,
-    "position": 0,
+    "position": 1,
     "coordinate": {
       "x": 80,
       "y": 20
@@ -401,7 +401,7 @@
   {
     "type": "BUILDING",
     "image": 5,
-    "position": 0,
+    "position": 1,
     "coordinate": {
       "x": 10,
       "y": 20
@@ -414,7 +414,7 @@
   {
     "type": "MOUNTAIN",
     "image": 1,
-    "position": 1,
+    "position": 0,
     "coordinate": {
       "x": 2,
       "y": 20
@@ -425,7 +425,7 @@
   {
     "type": "MOUNTAIN",
     "image": 2,
-    "position": 1,
+    "position": 0,
     "coordinate": {
       "x": 15,
       "y": 20
@@ -436,7 +436,7 @@
   {
     "type": "MOUNTAIN",
     "image": 3,
-    "position": 1,
+    "position": 0,
     "coordinate": {
       "x": 70,
       "y": 20
@@ -447,7 +447,7 @@
   {
     "type": "MOUNTAIN",
     "image": 4,
-    "position": 1,
+    "position": 0,
     "coordinate": {
       "x": 50,
       "y": 20
@@ -458,7 +458,7 @@
   {
     "type": "MOUNTAIN",
     "image": 5,
-    "position": 1,
+    "position": 0,
     "coordinate": {
       "x": 60,
       "y": 35
@@ -469,7 +469,7 @@
   {
     "type": "MOUNTAIN",
     "image": 6,
-    "position": 1,
+    "position": 0,
     "coordinate": {
       "x": 5,
       "y": 35
@@ -485,7 +485,7 @@
     "position": 1,
     "coordinate": {
       "x": 35,
-      "y": 20
+      "y": 18
     },
     "size": 200,
     "delay": 0.2
@@ -498,7 +498,7 @@
     "position": 0,
     "coordinate": {
       "x": 13,
-      "y": 20
+      "y": 18
     },
     "size": 200,
     "delay": 0.2
@@ -590,7 +590,7 @@
     "position": 2,
     "coordinate": {
       "x": 45,
-      "y": 20
+      "y": 18
     },
     "size": 200,
     "delay": 0.2

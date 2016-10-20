@@ -1,0 +1,67 @@
+@import "./../../scss/variables.scss";
+
+.seesaw {
+  position: absolute;
+
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+
+  -webkit-transition: $background-animation-duration;
+     -moz-transition: $background-animation-duration;
+          transition: $background-animation-duration;
+  -webkit-animation-timing-function: ease-out; /* Chrome, Safari, Opera */
+          animation-timing-function: ease-out;
+
+  &.active {
+
+  }
+
+  &.passed {
+    left: -100% !important;
+    // -webkit-transition-delay: 0.25s !important; /* Safari */
+    //         transition-delay: 0.25s !important;
+  }
+
+  > .wrapper {
+    position: relative;
+    width: 100%;
+    > .actors {
+      position: absolute;
+      left: 0;
+      bottom: 10px;
+      width: 100%;
+      height: auto;
+      cursor: pointer;
+
+      transform-origin: 50% 80%;
+      transform: rotate(0);
+      -webkit-transition-duration: 1s;
+         -moz-transition-duration: 1s;
+              transition-duration: 1s;
+      -webkit-animation-timing-function: ease-out; /* Chrome, Safari, Opera */
+              animation-timing-function: ease-out;
+
+      &.animate {
+      	&.left {
+          transform: rotate(-15deg);
+        }
+        &.right {
+          transform: rotate(15deg);
+        }
+      }
+    }
+
+    > .base {
+      pointer-events: none;
+      position: absolute;
+      left: 33%;
+      bottom: 0;
+      width: 30%;
+      height: auto;
+    }
+  }
+
+
+}

@@ -4,6 +4,7 @@ import { connect } from "react-redux";
 
 import { fetchCharacter } from "./../../actions/characterActions";
 import { fetchBackgrounds } from "./../../actions/backgroundsActions";
+import { fetchActors } from "./../../actions/actorsActions";
 import Character from "./../character/character.component";
 import Ground from "./../ground/ground.component";
 import Cloud from "./../cloud/cloud.component";
@@ -14,6 +15,8 @@ import Pillar from "./../pillar/pillar.component";
 import Roof from "./../roof/roof.component";
 import Bookshelf from "./../bookshelf/bookshelf.component";
 
+import Seesaw from "./../actors/seesaw.component";
+
 
 require('./dashboard.component.scss');
 
@@ -22,6 +25,7 @@ require('./dashboard.component.scss');
   return {
     character: store.character.character,
     backgrounds: store.backgrounds.backgrounds,
+    actors: store.actors.actors,
     localization: store.localization.localization,
   }
 })
@@ -32,6 +36,7 @@ export default class Dashboard extends React.Component {
   componentWillMount() {
     this.props.dispatch(fetchCharacter());
     this.props.dispatch(fetchBackgrounds());
+    this.props.dispatch(fetchActors());
   }
   componentDidMount() {
 
@@ -46,7 +51,7 @@ export default class Dashboard extends React.Component {
 
   }
   render() {
-    let character, backgrounds;
+    let character, backgrounds, actors;
     if (this.props.character) {
       character = <Character character={this.props.character} />;
     }
@@ -69,9 +74,15 @@ export default class Dashboard extends React.Component {
         return <Bookshelf key={"background-" + index} bookshelf={item} />;
       }
     });
+    actors = this.props.actors.map((item, index) => {
+      if (item.type == "SEESAW") {
+        return <Seesaw key={"actor-" + index} actor={item} />;
+      }
+    });
     return (
       <div className="dashboard">
         {backgrounds}
+        {actors}
         {character}
       </div>
     )

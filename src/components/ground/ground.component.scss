@@ -23,16 +23,16 @@
   //         transition-delay: 0.1s;
 
   > .road {
-    height: 16px;
+    height: 10%;
   }
 
-  &.pos-0 {
+  &.pos-1 {
     background-color: #aa997f;
     > .road {
       background-color: #cdb998;
     }
   }
-  &.pos-1 {
+  &.pos-0 {
     background-color: #a9c166;
     > .road {
       background-color: #c9da8c;

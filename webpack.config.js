@@ -12,6 +12,16 @@ var LIBRARIES_DIR = path.resolve(__dirname, './libraries');
 var BUILD_DIR = path.resolve(__dirname, './dist');
 var MODULES_DIR = path.resolve(__dirname, './node_modules');
 
+var directory = "";
+var dargv = process.argv.filter(function(el) {
+  return el.indexOf("DIRECTORY") > -1; // any position match
+});
+if (dargv.length > 0) {
+  directory = dargv[0].replace("DIRECTORY=", "");
+}
+
+
+
 var devDefinePlugin = new webpack.DefinePlugin({
   __DEV__: true,
 });
@@ -76,7 +86,7 @@ var config = {
   output: {
     path: BUILD_DIR,
     filename: './js/[name]-bundle.js',
-    publicPath: ''
+    publicPath: directory
   },
   plugins: corePluginList.concat(devPluginList),
   devtool: 'eval',

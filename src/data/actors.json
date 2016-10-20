@@ -1,0 +1,12 @@
+[
+  {
+    "type": "SEESAW",
+    "position": 0,
+    "coordinate": {
+      "x": 35,
+      "y": 18
+    },
+    "size": 150,
+    "delay": 0.25
+  }
+]

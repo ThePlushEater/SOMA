@@ -7,8 +7,8 @@ export default class ShuffleText extends React.Component {
     this.interval = null;
     this.setState({
       index: 0,
-      step: 3,
-      fps: 40,
+      step: 6,
+      fps: 60,
       text: "",
     });
   }
@@ -16,13 +16,13 @@ export default class ShuffleText extends React.Component {
     if (this.props.text && this.props.text.trim() != "") {
       setTimeout(function() {
         this.animate(this.props);
-      }.bind(this), 1000);
+      }.bind(this), 500);
     }
   }
   componentWillReceiveProps(nextProps) {
     setTimeout(function() {
       this.animate(nextProps);
-    }.bind(this), 1000);
+    }.bind(this), 500);
   }
   shouldComponentUpdate(nextProps, nextState) {
     if (this.state.text != nextState.text) {
