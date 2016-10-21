@@ -6,11 +6,10 @@ import backgrounds from "./backgroundsReducer";
 import actors from "./actorsReducer";
 import texts from "./textsReducer";
 
+import layout from "./layoutReducer";
+
 
 export default combineReducers({
   localization,
-  character,
-  backgrounds,
-  actors,
-  texts,
+  layout,
 });

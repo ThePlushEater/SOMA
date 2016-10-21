@@ -11,12 +11,14 @@ import store from "./../store/store";
 import Layout from "./layout/layout.component";
 import Dashboard from "./dashboard/dashboard.component";
 
+import Parallax from "./parallax/parallax.component";
+
 require('./index.scss');
 
 ReactDom.render(<Provider store={store}>
     <Router history={hashHistory}>
       <Route path="/" component={Layout}>
-        <IndexRoute component={Dashboard} />
+        <IndexRoute component={Parallax} />
       </Route>
     </Router>
   </Provider>

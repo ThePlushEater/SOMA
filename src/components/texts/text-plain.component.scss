@@ -1,0 +1,9 @@
+@import "./../../scss/variables.scss";
+
+.text-plain {
+  font-family: $font-bold;
+  color: $gray;
+
+  overflow: hidden;
+  white-space: nowrap;
+}
