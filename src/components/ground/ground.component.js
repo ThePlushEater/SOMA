@@ -73,7 +73,7 @@ export default class Ground extends React.Component {
     switch(this.props.ground.position) {
       case 0: {
         leftbutton = <div className="left"><FontAwesome className='' name='certificate' /> HOME</div>;
-        rightbutton = <div className="right" onClick={this.navigate.bind(this, "RIGHT")}>TEMP <FontAwesome className='' name='arrow-circle-right' /></div>;
+        rightbutton = <div className="right" onClick={this.navigate.bind(this, "RIGHT")}>INTRO <FontAwesome className='' name='arrow-circle-right' /></div>;
         break;
       }
       case 1: {
@@ -82,7 +82,7 @@ export default class Ground extends React.Component {
         break;
       }
       case 2: {
-        leftbutton = <div className="left" onClick={this.navigate.bind(this, "LEFT")}><FontAwesome className='' name='arrow-circle-left' /> TEMP</div>;
+        leftbutton = <div className="left" onClick={this.navigate.bind(this, "LEFT")}><FontAwesome className='' name='arrow-circle-left' /> INTRO</div>;
         rightbutton = <div className="right" onClick={this.navigate.bind(this, "RIGHT")}>PROJECTS <FontAwesome className='' name='arrow-circle-right' /></div>;
         break;
       }

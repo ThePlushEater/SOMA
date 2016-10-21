@@ -370,7 +370,7 @@
     "image": 2,
     "position": 1,
     "coordinate": {
-      "x": 25,
+      "x": 17,
       "y": 20
     },
     "size": 60,
@@ -403,10 +403,10 @@
     "image": 5,
     "position": 1,
     "coordinate": {
-      "x": 10,
+      "x": 7,
       "y": 20
     },
-    "size": 120,
+    "size": 90,
     "delay": 0.25
   },
 
@@ -481,10 +481,10 @@
   {
     "type": "PANEL",
     "image": 1,
-    "text": "TEMP TEXT",
+    "text": "CITY OF SOMA",
     "position": 1,
     "coordinate": {
-      "x": 35,
+      "x": 14,
       "y": 18
     },
     "size": 200,
@@ -494,7 +494,7 @@
   {
     "type": "PANEL",
     "image": 1,
-    "text": "VISIT OUR PLAYGROUND",
+    "text": "SOMA PLAYGROUND",
     "position": 0,
     "coordinate": {
       "x": 13,
@@ -555,7 +555,7 @@
     "image": 2,
     "position": 2,
     "coordinate": {
-      "x": 30,
+      "x": 28,
       "y": 20
     },
     "size": 180,
@@ -566,7 +566,7 @@
     "image": 2,
     "position": 2,
     "coordinate": {
-      "x": 65,
+      "x": 67,
       "y": 20
     },
     "size": 220,
@@ -586,10 +586,35 @@
   {
     "type": "PANEL",
     "image": 1,
-    "text": "RESEARCH",
+    "text": "RESEARCH LIBRARY",
     "position": 2,
     "coordinate": {
-      "x": 45,
+      "x": 44,
+      "y": 18
+    },
+    "size": 200,
+    "delay": 0.2
+  },
+
+
+  {
+    "type": "THEATER",
+    "image": 1,
+    "position": 3,
+    "coordinate": {
+      "x": 10,
+      "y": 20
+    },
+    "size": 60,
+    "delay": 0.25
+  },
+  {
+    "type": "PANEL",
+    "image": 1,
+    "text": "PROJECT THEATER",
+    "position": 3,
+    "coordinate": {
+      "x": 69,
       "y": 18
     },
     "size": 200,

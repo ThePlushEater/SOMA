@@ -1,0 +1,49 @@
+@import "./../../scss/variables.scss";
+
+.theater {
+  position: absolute;
+
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+
+  -webkit-transition: $background-animation-duration;
+     -moz-transition: $background-animation-duration;
+          transition: $background-animation-duration;
+  -webkit-animation-timing-function: ease-out; /* Chrome, Safari, Opera */
+          animation-timing-function: ease-out;
+
+  &.active {
+
+  }
+
+  &.passed {
+    left: -100% !important;
+    // -webkit-transition-delay: 0.25s !important; /* Safari */
+    //         transition-delay: 0.25s !important;
+  }
+
+  > .wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    > .actor {
+      position: absolute;
+      left: 1.6%;
+      top: 23%;
+      width: auto;
+      height: 56%;
+    }
+
+    > .base {
+      pointer-events: none;
+      position: absolute;
+      left: 0%;
+      bottom: 0;
+      width: auto;
+      height: 100%;
+    }
+  }
+}

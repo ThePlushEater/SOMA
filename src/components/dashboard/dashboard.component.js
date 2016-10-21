@@ -15,6 +15,7 @@ import Panel from "./../panel/panel.component";
 import Pillar from "./../pillar/pillar.component";
 import Roof from "./../roof/roof.component";
 import Bookshelf from "./../bookshelf/bookshelf.component";
+import Theater from "./../theater/theater.component";
 
 import Seesaw from "./../actors/seesaw.component";
 import Junglegym from "./../actors/junglegym.component";
@@ -79,6 +80,8 @@ export default class Dashboard extends React.Component {
         return <Roof key={"background-" + index} roof={item} />;
       } else if (item.type == "BOOKSHELF") {
         return <Bookshelf key={"background-" + index} bookshelf={item} />;
+      } else if (item.type == "THEATER") {
+        return <Theater key={"background-" + index} theater={item} />;
       }
     });
     actors = this.props.actors.map((item, index) => {
