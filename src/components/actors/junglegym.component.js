@@ -65,6 +65,9 @@ export default class Junglegym extends React.Component {
     this.setState({
       jumping: value,
     });
+    if (value) {
+      this.props.dispatch({type: "SET_MAIN_DESCRIPTION", payload: this.props.actor.description});
+    }
   }
   render() {
     let active = "";

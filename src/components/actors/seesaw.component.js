@@ -113,6 +113,14 @@ export default class Seesaw extends React.Component {
       }.bind(this), 1000);
     }
   }
+  showDescription(value, event) {
+    if (value) {
+      this.props.dispatch({type: "SET_MAIN_DESCRIPTION", payload: this.props.actor.description});
+    }
+    //  else {
+    //   this.props.dispatch({type: "SET_MAIN_DESCRIPTION", payload: ""});
+    // }
+  }
   render() {
     let active = "";
     let delay = "0s";
@@ -152,7 +160,7 @@ export default class Seesaw extends React.Component {
     return (
       <div style={style} className={"seesaw" + " pos-" + this.props.actor.position + active}>
         <div className="wrapper">
-          <img className={"actors" + animate} src="./seesaw-actors.png" onMouseEnter={this.animate.bind(this, true)} onMouseOut={this.animate.bind(this, false)} onClick={this.onClick.bind(this)}/>
+          <img className={"actors" + animate} src="./seesaw-actors.png" onMouseEnter={this.showDescription.bind(this, true)} onMouseOut={this.showDescription.bind(this, false)} onClick={this.onClick.bind(this)}/>
           <img className="base" src="./seesaw-base.png" />
         </div>
       </div>

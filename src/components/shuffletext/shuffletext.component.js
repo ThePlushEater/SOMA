@@ -7,7 +7,7 @@ export default class ShuffleText extends React.Component {
     this.interval = null;
     this.setState({
       index: 0,
-      step: 4,
+      step: 6,
       fps: 60,
       text: "",
     });
@@ -30,14 +30,14 @@ export default class ShuffleText extends React.Component {
     }
     return false;
   }
-  onMouseOver(event) {
-    // if (!this.interval) {
-    //   this.setState({
-    //     index: 0,
-    //     text: "",
-    //   });
-    //   this.animate(this.props);
-    // }
+  onClick(event) {
+    if (this.props.reset && !this.interval) {
+      this.setState({
+        index: 0,
+        text: "",
+      });
+      this.animate(this.props);
+    }
   }
   animate(props) {
     const length = props.text ? props.text.length : 0;
@@ -56,7 +56,7 @@ export default class ShuffleText extends React.Component {
     }.bind(this), length * this.state.step * 1000 / this.state.fps + 1);
   }
   render() {
-    return <div className="shuffletext" onMouseOver={this.onMouseOver.bind(this)}>
+    return <div className="shuffletext" onClick={this.onClick.bind(this)}>
       {this.state.text}
     </div>;
   }

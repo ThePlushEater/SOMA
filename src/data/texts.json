@@ -14,25 +14,12 @@
   },
   {
     "type": "BLANK",
-    "text": "This site explores new ways of thinking",
+    "text": "This site explores new ways of thinking<br/>about how children play digital games",
     "position": 0,
     "content": 0,
     "coordinate": {
       "x": 44,
       "y": 220
-    },
-    "size": 16,
-    "animate": false,
-    "delay": 0.25
-  },
-  {
-    "type": "BLANK",
-    "text": "about how children play digital games",
-    "position": 0,
-    "content": 0,
-    "coordinate": {
-      "x": 44,
-      "y": 240
     },
     "size": 16,
     "animate": false,

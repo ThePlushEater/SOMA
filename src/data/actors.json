@@ -1,6 +1,7 @@
 [
   {
     "type": "SEESAW",
+    "description": "Click the seesaw multiple times to help children play with it.",
     "position": 0,
     "coordinate": {
       "x": 35,
@@ -11,6 +12,7 @@
   },
   {
     "type": "JUNGLEGYM",
+    "description": "Click the junglegym to help a child play with it.",
     "position": 0,
     "coordinate": {
       "x": 50,
@@ -21,6 +23,7 @@
   },
   {
     "type": "SLIDE",
+    "description": "Click the slide to help a child play with it.",
     "position": 0,
     "coordinate": {
       "x": 80,

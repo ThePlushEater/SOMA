@@ -52,11 +52,14 @@ export default class Slide extends React.Component {
       ready: false,
     });
   }
-  prepare(event) {
+  prepare(value, event) {
     this.setState({
       ready: true,
       animate: false,
     });
+    if (value) {
+      this.props.dispatch({type: "SET_MAIN_DESCRIPTION", payload: this.props.actor.description});
+    }
   }
   render() {
     let active = "";
@@ -100,7 +103,7 @@ export default class Slide extends React.Component {
       <div style={style} className={"slide" + " pos-" + this.props.actor.position + active}>
         <div style={wrapperStyle} className="wrapper">
           <img className={"actor" + status} src="./slide-actor-1.png" />
-          <img className="base left" src="./slide-base.png" onMouseEnter={this.prepare.bind(this)} onClick={this.animate.bind(this)} onMouseOut={this.reset.bind(this)} />
+          <img className="base left" src="./slide-base.png" onMouseEnter={this.prepare.bind(this, true)} onClick={this.animate.bind(this)} onMouseOut={this.reset.bind(this, false)} />
         </div>
       </div>
     )

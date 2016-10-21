@@ -37,6 +37,7 @@ export default class Layout extends React.Component {
   handleKeys(value, event){
     if(event.keyCode === KEY.LEFT   || event.keyCode === KEY.A) {
       if (!this.props.animating) {
+        this.props.dispatch({type: "SET_MAIN_DESCRIPTION", payload: ""});
         this.props.dispatch({type: "MOVE_CHARACTER_LEFT"});
         this.props.dispatch({type: "SET_CHARACTER_ANIMATING"});
         setTimeout(function() {
@@ -46,6 +47,7 @@ export default class Layout extends React.Component {
     }
     if(event.keyCode === KEY.RIGHT  || event.keyCode === KEY.D) {
       if (!this.props.animating) {
+        this.props.dispatch({type: "SET_MAIN_DESCRIPTION", payload: ""});
         this.props.dispatch({type: "MOVE_CHARACTER_RIGHT"});
         this.props.dispatch({type: "SET_CHARACTER_ANIMATING"});
         setTimeout(function() {

@@ -53,7 +53,7 @@ export default class Panel extends React.Component {
 
       bottom = this.props.panel.coordinate.y + "%";
       width = this.props.panel.size;
-      text = <ShuffleText text={this.props.panel.text} />
+      text = <ShuffleText text={this.props.panel.text} reset={true} />
 
       switch (this.props.panel.image) {
         case 1: {

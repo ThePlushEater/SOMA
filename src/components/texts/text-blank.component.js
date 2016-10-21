@@ -2,7 +2,6 @@ import React from "react";
 import ReactDom from "react-dom";
 import { connect } from "react-redux";
 
-import ShuffleText from "./../shuffletext/shuffletext.component";
 
 require('./text-blank.component.scss');
 
@@ -60,14 +59,8 @@ export default class TextBlank extends React.Component {
       top: top,
       transitionDelay: delay,
     }
-    let text;
-    if (this.props.item.animate) {
-      text = <ShuffleText text={this.props.item.text} />;
-    } else {
-      text = this.props.item.text;
-    }
     return <div style={style} className={"text-blank" + active}>
-      {text}
+      <div dangerouslySetInnerHTML={{__html: this.props.item.text}} />
     </div>;
   }
 }

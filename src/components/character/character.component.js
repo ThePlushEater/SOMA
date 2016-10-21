@@ -30,6 +30,14 @@ export default class Character extends React.Component {
   componentWillUnmount() {
 
   }
+  showDescription(value, event) {
+    if (value) {
+      this.props.dispatch({type: "SET_MAIN_DESCRIPTION", payload: this.props.character.description});
+    }
+    //  else {
+    //   this.props.dispatch({type: "SET_MAIN_DESCRIPTION", payload: ""});
+    // }
+  }
   render() {
     if (this.props.character) {
       let image;
@@ -39,7 +47,7 @@ export default class Character extends React.Component {
         image = <img src="./trike-right.png" />;
       }
       return (
-        <div className={"character" + " pos-" + this.props.character.position}>
+        <div className={"character" + " pos-" + this.props.character.position} onMouseEnter={this.showDescription.bind(this, true)} onMouseOut={this.showDescription.bind(this, false)}>
           {image}
         </div>
       )

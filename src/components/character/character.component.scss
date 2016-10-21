@@ -5,7 +5,8 @@
   left: 5%;
   bottom: 17.5%;
 
-  pointer-events: none;
+  cursor: pointer;
+  // pointer-events: none;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;

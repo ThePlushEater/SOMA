@@ -9,6 +9,7 @@ require('./ground.component.scss');
 
 @connect((store) => {
   return {
+    description: store.texts.description,
     animating: store.character.animating,
     character: store.character.character,
     localization: store.localization.localization,
@@ -36,6 +37,7 @@ export default class Ground extends React.Component {
   navigate(value, event){
     if(value == "LEFT") {
       if (!this.props.animating) {
+        this.props.dispatch({type: "SET_MAIN_DESCRIPTION", payload: ""});
         this.props.dispatch({type: "MOVE_CHARACTER_LEFT"});
         this.props.dispatch({type: "SET_CHARACTER_ANIMATING"});
         setTimeout(function() {
@@ -44,6 +46,7 @@ export default class Ground extends React.Component {
       }
     } else if(value == "RIGHT") {
       if (!this.props.animating) {
+        this.props.dispatch({type: "SET_MAIN_DESCRIPTION", payload: ""});
         this.props.dispatch({type: "MOVE_CHARACTER_RIGHT"});
         this.props.dispatch({type: "SET_CHARACTER_ANIMATING"});
         setTimeout(function() {
@@ -98,7 +101,7 @@ export default class Ground extends React.Component {
         <div className="road" />
         <div className="wrapper">
           {leftbutton}
-          <div className="center"></div>
+          <div className="center" dangerouslySetInnerHTML={{__html: this.props.description}} />
           {rightbutton}
         </div>
       </div>
