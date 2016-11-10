@@ -29,6 +29,10 @@ export default class App extends React.Component {
     app.addEventListener('mousewheel', this.handleMouseWheel.bind(this, app));
     app.addEventListener('scroll', this.handleScroll.bind(this, app));
     window.addEventListener('resize', this.handleResize.bind(this, app));
+
+    setTimeout(function() {
+      app.scrollLeft = 1;
+    }, 1);
   }
   handleMouseWheel(element, event) {
     element.scrollLeft += event.deltaY * 0.01;
@@ -50,6 +54,7 @@ export default class App extends React.Component {
           <div className="frame">{this.props.layout.frame}</div>
           {sprite}
         </div>
+        <div className="border" />
       </div>
     );
   }

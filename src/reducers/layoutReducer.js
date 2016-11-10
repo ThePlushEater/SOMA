@@ -13,7 +13,7 @@ export default function reducer(state={
       return {...state, frame: action.payload}
     }
     case "SET_LAYOUT_SIZE": {
-      return {...state, width: action.payload.width + 4, height: action.payload.height - 4}
+      return {...state, width: action.payload.width + 8, height: action.payload.height - 4}
     }
   }
   return state;

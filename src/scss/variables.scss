@@ -17,3 +17,12 @@ $font-medium-large: 1.25em;
 $font-medium: 1em;
 $font-small: 0.75em;
 $font-x-small: 0.5em;
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  10% { transform: rotate(0deg); }
+  20% { transform: rotate(-5deg); }
+  80% { transform: rotate(725deg); }
+	90% { transform: rotate(720deg); }
+  100% { transform: rotate(720deg); }
+}
