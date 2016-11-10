@@ -1,0 +1,13 @@
+{
+  "sprites": [
+    {
+      "type": "TITLE",
+      "animations": [
+        { "frame": 0, "position": [1, 0.5, 0]},
+        { "frame": 10, "position": [0.5, 0.5, 0]},
+        { "frame": 20, "position": [0.5, 0.5, 0]},
+        { "frame": 25, "position": [0, 0.5, 0]}
+      ]
+    }
+  ]
+}

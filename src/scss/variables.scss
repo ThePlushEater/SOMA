@@ -17,29 +17,3 @@ $font-medium-large: 1.25em;
 $font-medium: 1em;
 $font-small: 0.75em;
 $font-x-small: 0.5em;
-
-$header-height: 160px;
-$header-padding: 20px 40px;
-$title-height: 120px;
-$header-background-color: #231f20;
-
-$character-animation-duration: 2s;
-$character-height: 100px;
-
-$background-animation-duration: 1.5s;
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  10% { transform: rotate(0deg); }
-  20% { transform: rotate(-5deg); }
-  80% { transform: rotate(725deg); }
-	90% { transform: rotate(720deg); }
-  100% { transform: rotate(720deg); }
-}
-
-@keyframes jump {
-  0% { transform: translateY(0); }
-  40% { transform: translateY(-4px); }
-  80% { transform: translateY(0px); }
-  100% { transform: translateY(0); }
-}

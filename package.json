@@ -1,14 +1,12 @@
 {
-  "name": "smartcityworkshop",
+  "name": "soma",
   "version": "1.0.0",
-  "description": "smartcityworkshop",
+  "description": "Website project for somatic engagement.",
   "scripts": {
     "start": "webpack -d --watch --config webpack.config.js"
   },
   "keywords": [
-    "Cavnas",
-    "React",
-    "Pathfinder"
+    "React"
   ],
   "author": "Karl Kim (captainwhale52@gmail.com)",
   "license": "ISC",
@@ -41,7 +39,6 @@
     "react-addons-transition-group": "^15.3.2",
     "react-dom": "^15.3.2",
     "react-redux": "^4.4.5",
-    "react-router": "^2.8.1",
     "redux": "^3.6.0",
     "redux-logger": "^2.6.1",
     "redux-promise-middleware": "^4.0.0",
@@ -56,6 +53,7 @@
   "dependencies": {
     "leaflet": "^1.0.1",
     "moment": "^2.15.1",
-    "react-fontawesome": "^1.2.0"
+    "react-fontawesome": "^1.2.0",
+    "seamless-immutable": "^6.3.0"
   }
 }

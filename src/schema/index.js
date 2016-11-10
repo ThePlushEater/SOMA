@@ -1,17 +1,21 @@
 import { Schema, arrayOf } from 'normalizr';
 
-const station = new Schema('stations');
-const port = new Schema('ports');
-const sensor = new Schema('sensors');
+const page = new Schema('pages');
+const element = new Schema('elements');
+// const sensor = new Schema('sensors');
 
-// An Station has an array of Ports
-station.define({
-  ports: arrayOf(port)
+page.define({
+  elements: arrayOf(element),
 });
+
 
 // A Port has one sensor attached
-port.define({
-  sensor: sensor
-});
+// port.define({
+//   sensor: sensor
+// });
 
-export { station, port, sensor };
+// sensor.define({
+//   data: arrayOf(datum)
+// });
+
+export { page, element };

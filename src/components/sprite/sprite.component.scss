@@ -1,0 +1,18 @@
+@import "./../../scss/variables.scss";
+
+.sprite {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  -webkit-transform-origin: 50% 50%; /* Chrome, Safari, Opera */
+      -ms-transform-origin: 50% 50%; /* IE 9 */
+          transform-origin: 50% 50%;
+
+  -webkit-transition-duration: 0.5s;
+     -moz-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-animation-timing-function: ease-out; /* Chrome, Safari, Opera */
+          animation-timing-function: ease-out;
+
+}
