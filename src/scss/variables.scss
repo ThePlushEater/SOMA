@@ -26,3 +26,9 @@ $font-x-small: 0.5em;
 	90% { transform: rotate(720deg); }
   100% { transform: rotate(720deg); }
 }
+
+@keyframes fade-in {
+  0% { opacity: 0; }
+  75% { opacity: 0; }
+  100% { opacity: 1; }
+}

@@ -5,6 +5,7 @@ import { connect } from "react-redux";
 import { fetchLocalization } from "./../../actions/localizationActions";
 import { fetchSprites } from "./../../actions/spriteActions";
 import Sprite from "./../sprite/sprite.component";
+import Menu from "./../menu/menu.component";
 
 require('./app.component.scss');
 
@@ -32,10 +33,10 @@ export default class App extends React.Component {
 
     setTimeout(function() {
       app.scrollLeft = 1;
-    }, 1);
+    }, 100);
   }
   handleMouseWheel(element, event) {
-    element.scrollLeft += event.deltaY * 0.01;
+    element.scrollLeft += event.deltaY * 0.05;
   }
   handleScroll(element, event) {
     this.props.dispatch({type: "SET_LAYOUT_FRAME", payload: element.scrollLeft});
@@ -49,11 +50,12 @@ export default class App extends React.Component {
       return <Sprite key={"sprite-" + index} item={item} />;
     });
     return(
-      <div ref="app" className="app">
+      <div id="app-scroll" ref="app" className="app">
         <div className="body">
           <div className="frame">{this.props.layout.frame}</div>
           {sprite}
         </div>
+        <Menu />
         <div className="border" />
       </div>
     );

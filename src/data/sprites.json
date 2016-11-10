@@ -4,11 +4,166 @@
       "type": "TITLE",
       "size": [0.5, 1],
       "text": "",
+      "blur": 0,
+      "zIndex": 2000,
       "animations": [
-        { "frame": 0, "position": [1, 0.4, 0]},
-        { "frame": 10, "position": [0.6, 0.4, 0]},
-        { "frame": 40, "position": [0.4, 0.4, 0]},
-        { "frame": 50, "position": [0, 0.4, 0]}
+        { "frame": 0, "position": [0.515, 0.375, 0]},
+        { "frame": 60, "position": [0.485, 0.375, 0]},
+        { "frame": 85, "position": [0.485, 0.375, 0]},
+        { "frame": 100, "position": [-0.5, 0.375, 0]}
+      ]
+    },{
+      "type": "PLAIN",
+      "blur": 0,
+      "zIndex": 2000,
+      "size": [0.075, 0.075],
+      "text": "SOMATIC ENGAGEMENT",
+      "animations": [
+        { "frame": 15, "position": [1.5, 0.535, 0]},
+        { "frame": 60, "position": [0.5, 0.535, 0]},
+        { "frame": 85, "position": [0.5, 0.535, 0]},
+        { "frame": 100, "position": [-0.5, 0.535, 0]}
+      ]
+    },{
+      "type": "PLAIN",
+      "blur": 0,
+      "zIndex": 2000,
+      "size": [0.035, 0.035],
+      "text": "THIS SITE EXPLORES NEW WAYS OF THINKING",
+      "animations": [
+        { "frame": 30, "position": [1.5, 0.625, 0]},
+        { "frame": 60, "position": [0.5, 0.625, 0]},
+        { "frame": 85, "position": [0.5, 0.625, 0]},
+        { "frame": 100, "position": [-0.5, 0.625, 0]}
+      ]
+    },{
+      "type": "PLAIN",
+      "blur": 0,
+      "zIndex": 2000,
+      "size": [0.035, 0.035],
+      "text": "ABOUT HOW CHILDREN PLAY DIGITAL GAMES",
+      "animations": [
+        { "frame": 40, "position": [1.5, 0.675, 0]},
+        { "frame": 60, "position": [0.5, 0.675, 0]},
+        { "frame": 85, "position": [0.5, 0.675, 0]},
+        { "frame": 100, "position": [-0.5, 0.675, 0]}
+      ]
+    },{
+      "type": "CLOUD",
+      "blur": 5,
+      "opacity": 0.35,
+      "zIndex": 3000,
+      "size": [0.9, 0.9],
+      "text": "",
+      "animations": [
+        { "frame": 0, "position": [0.85, 0.65, 0]},
+        { "frame": 60, "position": [0.1, 0.65, 0]},
+        { "frame": 85, "position": [0.1, 0.65, 0]},
+        { "frame": 100, "position": [-0.5, 0.65, 0]}
+      ]
+    },{
+      "type": "CLOUD",
+      "blur": 5,
+      "opacity": 0.25,
+      "zIndex": 3000,
+      "size": [0.75, 0.75],
+      "text": "",
+      "animations": [
+        { "frame": 40, "position": [1.5, 0.315, 0]},
+        { "frame": 60, "position": [0.65, 0.315, 0]},
+        { "frame": 85, "position": [0.65, 0.315, 0]},
+        { "frame": 100, "position": [-0.5, 0.315, 0]}
+      ]
+    },{
+      "type": "CLOUD",
+      "blur": 3,
+      "opacity": 0.5,
+      "zIndex": 3000,
+      "size": [0.35, 0.35],
+      "text": "",
+      "animations": [
+        { "frame": 20, "position": [1.5, 0.85, 0]},
+        { "frame": 60, "position": [0, 0.85, 0]},
+        { "frame": 85, "position": [0, 0.85, 0]},
+        { "frame": 100, "position": [-0.5, 0.85, 0]}
+      ]
+    },{
+      "type": "CLOUD",
+      "blur": 2,
+      "opacity": 0.75,
+      "zIndex": 1000,
+      "size": [0.25, 0.25],
+      "text": "",
+      "animations": [
+        { "frame": 30, "position": [1.5, 0.75, 0]},
+        { "frame": 60, "position": [0.15, 0.75, 0]},
+        { "frame": 85, "position": [0.15, 0.75, 0]},
+        { "frame": 100, "position": [-0.5, 0.75, 0]}
+      ]
+    },{
+      "type": "CLOUD",
+      "blur": 3,
+      "opacity": 0.75,
+      "zIndex": 1000,
+      "size": [0.15, 0.15],
+      "text": "",
+      "animations": [
+        { "frame": 40, "position": [1.5, 0.125, 0]},
+        { "frame": 60, "position": [0.15, 0.125, 0]},
+        { "frame": 85, "position": [0.15, 0.125, 0]},
+        { "frame": 100, "position": [-0.5, 0.125, 0]}
+      ]
+    },{
+      "type": "CLOUD",
+      "blur": 3,
+      "opacity": 0.75,
+      "zIndex": 1000,
+      "size": [0.2, 0.2],
+      "text": "",
+      "animations": [
+        { "frame": 40, "position": [1.75, 0.2, 0]},
+        { "frame": 60, "position": [0.25, 0.2, 0]},
+        { "frame": 85, "position": [0.25, 0.2, 0]},
+        { "frame": 100, "position": [-0.5, 0.2, 0]}
+      ]
+    },{
+      "type": "CLOUD",
+      "blur": 3,
+      "opacity": 0.75,
+      "zIndex": 1000,
+      "size": [0.15, 0.15],
+      "text": "",
+      "animations": [
+        { "frame": 30, "position": [2.25, 0.1, 0]},
+        { "frame": 60, "position": [0.45, 0.1, 0]},
+        { "frame": 85, "position": [0.45, 0.1, 0]},
+        { "frame": 100, "position": [-0.5, 0.1, 0]}
+      ]
+    },{
+      "type": "CLOUD",
+      "blur": 3,
+      "opacity": 0.75,
+      "zIndex": 1000,
+      "size": [0.275, 0.275],
+      "text": "",
+      "animations": [
+        { "frame": 35, "position": [2.5, 0.225, 0]},
+        { "frame": 60, "position": [0.6, 0.225, 0]},
+        { "frame": 85, "position": [0.6, 0.225, 0]},
+        { "frame": 100, "position": [-0.5, 0.225, 0]}
+      ]
+    },{
+      "type": "CLOUD",
+      "blur": 3,
+      "opacity": 0.75,
+      "zIndex": 1000,
+      "size": [0.45, 0.45],
+      "text": "",
+      "animations": [
+        { "frame": 30, "position": [3.5, 0.725, 0]},
+        { "frame": 60, "position": [0.85, 0.725, 0]},
+        { "frame": 85, "position": [0.85, 0.725, 0]},
+        { "frame": 100, "position": [-0.5, 0.725, 0]}
       ]
     }
   ]

@@ -1,0 +1,40 @@
+@import "./../../scss/variables.scss";
+
+.menu {
+  z-index: 9999;
+  width: 100%;
+  margin: 4px 0;
+  padding: 8px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  display: -webkit-box;           /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;              /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;           /* TWEENER - IE 10 */
+  display: -webkit-flex;          /* NEW - Chrome */
+  display: flex;                  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+
+  -webkit-flex-direction: row;    /* Safari 6.1+ */
+          flex-direction: row;    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+
+  -webkit-align-content: space-between;
+          align-content: space-between;
+
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  > .button {
+    flex-grow: 1;
+    text-align: center;
+
+    > span {
+      padding: 8px 4px;
+      font-family: $font-bold;
+      color: $gray;
+      font-size: $font-medium-large;
+      cursor: pointer;
+    }
+  }
+}
