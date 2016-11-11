@@ -12,6 +12,8 @@ import Trike from "./../trike/trike.component";
 import Seesaw from "./../playground/seesaw.component";
 import Junglegym from "./../playground/junglegym.component";
 import Mountain from "./../mountain/mountain.component";
+import Flower from "./../flower/flower.component";
+import Tree from "./../tree/tree.component";
 
 require('./sprite.component.scss');
 
@@ -101,6 +103,10 @@ export default class Sprite extends React.Component {
       child = <Mountain size={this.props.item.size} image={this.props.item.image} />;
     } else if (this.props.item.type == "JUNGLEGYM") {
       child = <Junglegym size={this.props.item.size} />;
+    } else if (this.props.item.type == "FLOWER") {
+      child = <Flower size={this.props.item.size} image={this.props.item.image} />;
+    } else if (this.props.item.type == "TREE") {
+      child = <Tree size={this.props.item.size} image={this.props.item.image} />;
     }
 
     return <div style={style} ref="wrapper" className="sprite">

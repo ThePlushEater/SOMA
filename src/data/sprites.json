@@ -51,7 +51,7 @@
     },{
       "type": "CLOUD",
       "blur": 5,
-      "opacity": 0.35,
+      "opacity": 0.25,
       "zIndex": 3000,
       "size": [0.85, 0.85],
       "text": "",
@@ -77,7 +77,7 @@
     },{
       "type": "CLOUD",
       "blur": 3,
-      "opacity": 0.5,
+      "opacity": 0.35,
       "zIndex": 3000,
       "size": [0.35, 0.35],
       "text": "",
@@ -173,13 +173,13 @@
 
     {
       "type": "TITLE",
-      "size": [0.25, 0.25],
+      "size": [0.35, 0.35],
       "text": "",
       "blur": 0,
       "zIndex": 5000,
       "animations": [
-        { "frame": 115, "position": [-0.25, 0.15, 0]},
-        { "frame": 120, "position": [0.15, 0.15, 0]}
+        { "frame": 115, "position": [-0.25, 0.215, 0]},
+        { "frame": 120, "position": [0.21, 0.215, 0]}
       ]
     },{
       "type": "ROAD",
@@ -199,7 +199,7 @@
       "blur": 0,
       "opacity": 1,
       "zIndex": 3000,
-      "size": [0.075, 0.075],
+      "size": [0.065, 0.065],
       "text": "",
       "animations": [
         { "frame": 105, "position": [-0.25, 0.825, 0]},
@@ -342,11 +342,235 @@
         { "frame": 350, "position": [-0.5, 0.74, 0]}
       ]
     },{
+      "type": "FLOWER",
+      "image": 1,
+      "blur": 0,
+      "opacity": 1,
+      "zIndex": 3000,
+      "size": [0.025, 0.025],
+      "text": "",
+      "animations": [
+        { "frame": 105, "position": [-1, 0.85, 0]},
+        { "frame": 110, "position": [0.1, 0.85, 0]},
+        { "frame": 340, "position": [-0.05, 0.85, 0]},
+        { "frame": 350, "position": [2.5, 0.85, 0]}
+      ]
+    },{
+      "type": "FLOWER",
+      "image": 2,
+      "blur": 0,
+      "opacity": 1,
+      "zIndex": 3000,
+      "size": [0.025, 0.025],
+      "text": "",
+      "animations": [
+        { "frame": 105, "position": [-1, 0.86, 0]},
+        { "frame": 110, "position": [0.15, 0.86, 0]},
+        { "frame": 340, "position": [0, 0.86, 0]},
+        { "frame": 350, "position": [2.5, 0.86, 0]}
+      ]
+    },{
+      "type": "FLOWER",
+      "image": 1,
+      "blur": 0,
+      "opacity": 1,
+      "zIndex": 3000,
+      "size": [0.025, 0.025],
+      "text": "",
+      "animations": [
+        { "frame": 105, "position": [-1, 0.875, 0]},
+        { "frame": 110, "position": [0.2, 0.875, 0]},
+        { "frame": 340, "position": [0.05, 0.875, 0]},
+        { "frame": 350, "position": [2.5, 0.875, 0]}
+      ]
+    },{
+      "type": "FLOWER",
+      "image": 2,
+      "blur": 0,
+      "opacity": 1,
+      "zIndex": 3000,
+      "size": [0.025, 0.025],
+      "text": "",
+      "animations": [
+        { "frame": 105, "position": [-1, 0.85, 0]},
+        { "frame": 110, "position": [0.275, 0.85, 0]},
+        { "frame": 340, "position": [0.125, 0.85, 0]},
+        { "frame": 350, "position": [2.5, 0.85, 0]}
+      ]
+    },{
+      "type": "FLOWER",
+      "image": 2,
+      "blur": 0,
+      "opacity": 1,
+      "zIndex": 3000,
+      "size": [0.025, 0.025],
+      "text": "",
+      "animations": [
+        { "frame": 105, "position": [-1, 0.895, 0]},
+        { "frame": 110, "position": [0.4, 0.895, 0]},
+        { "frame": 340, "position": [0.25, 0.895, 0]},
+        { "frame": 350, "position": [2.5, 0.895, 0]}
+      ]
+    },{
+      "type": "FLOWER",
+      "image": 1,
+      "blur": 0,
+      "opacity": 1,
+      "zIndex": 3000,
+      "size": [0.025, 0.025],
+      "text": "",
+      "animations": [
+        { "frame": 105, "position": [-1, 0.895, 0]},
+        { "frame": 110, "position": [0.5, 0.895, 0]},
+        { "frame": 340, "position": [0.35, 0.895, 0]},
+        { "frame": 350, "position": [2.5, 0.895, 0]}
+      ]
+    },{
+      "type": "FLOWER",
+      "image": 2,
+      "blur": 0,
+      "opacity": 1,
+      "zIndex": 3000,
+      "size": [0.025, 0.025],
+      "text": "",
+      "animations": [
+        { "frame": 105, "position": [-1, 0.825, 0]},
+        { "frame": 110, "position": [0.7, 0.825, 0]},
+        { "frame": 340, "position": [0.55, 0.825, 0]},
+        { "frame": 350, "position": [2.5, 0.825, 0]}
+      ]
+    },{
+      "type": "FLOWER",
+      "image": 1,
+      "blur": 0,
+      "opacity": 1,
+      "zIndex": 3000,
+      "size": [0.025, 0.025],
+      "text": "",
+      "animations": [
+        { "frame": 105, "position": [-1, 0.8, 0]},
+        { "frame": 110, "position": [0.75, 0.8, 0]},
+        { "frame": 340, "position": [0.6, 0.8, 0]},
+        { "frame": 350, "position": [2.5, 0.8, 0]}
+      ]
+    },{
+      "type": "FLOWER",
+      "image": 2,
+      "blur": 0,
+      "opacity": 1,
+      "zIndex": 3000,
+      "size": [0.025, 0.025],
+      "text": "",
+      "animations": [
+        { "frame": 105, "position": [-1, 0.815, 0]},
+        { "frame": 110, "position": [0.85, 0.815, 0]},
+        { "frame": 340, "position": [0.7, 0.815, 0]},
+        { "frame": 350, "position": [2.5, 0.815, 0]}
+      ]
+    },{
+      "type": "FLOWER",
+      "image": 1,
+      "blur": 0,
+      "opacity": 1,
+      "zIndex": 3000,
+      "size": [0.025, 0.025],
+      "text": "",
+      "animations": [
+        { "frame": 105, "position": [-1, 0.825, 0]},
+        { "frame": 110, "position": [0.9, 0.825, 0]},
+        { "frame": 340, "position": [0.75, 0.825, 0]},
+        { "frame": 350, "position": [2.5, 0.825, 0]}
+      ]
+    },{
+      "type": "TREE",
+      "image": 1,
+      "blur": 0,
+      "opacity": 1,
+      "zIndex": 2000,
+      "size": [0.025, 0.025],
+      "text": "",
+      "animations": [
+        { "frame": 105, "position": [-1, 0.75, 0]},
+        { "frame": 110, "position": [0.25, 0.75, 0]},
+        { "frame": 340, "position": [0.0, 0.75, 0]},
+        { "frame": 350, "position": [2.5, 0.75, 0]}
+      ]
+    },{
+      "type": "TREE",
+      "image": 2,
+      "blur": 0,
+      "opacity": 1,
+      "zIndex": 2000,
+      "size": [0.025, 0.025],
+      "text": "",
+      "animations": [
+        { "frame": 105, "position": [-1, 0.75, 0]},
+        { "frame": 110, "position": [0.35, 0.75, 0]},
+        { "frame": 340, "position": [0.1, 0.75, 0]},
+        { "frame": 350, "position": [2.5, 0.75, 0]}
+      ]
+    },{
+      "type": "TREE",
+      "image": 1,
+      "blur": 0,
+      "opacity": 1,
+      "zIndex": 2000,
+      "size": [0.025, 0.025],
+      "text": "",
+      "animations": [
+        { "frame": 105, "position": [-1, 0.75, 0]},
+        { "frame": 110, "position": [0.45, 0.75, 0]},
+        { "frame": 340, "position": [0.2, 0.75, 0]},
+        { "frame": 350, "position": [2.5, 0.75, 0]}
+      ]
+    },{
+      "type": "TREE",
+      "image": 3,
+      "blur": 0,
+      "opacity": 1,
+      "zIndex": 2000,
+      "size": [0.025, 0.025],
+      "text": "",
+      "animations": [
+        { "frame": 105, "position": [-1, 0.75, 0]},
+        { "frame": 110, "position": [0.5, 0.75, 0]},
+        { "frame": 340, "position": [0.25, 0.75, 0]},
+        { "frame": 350, "position": [2.5, 0.75, 0]}
+      ]
+    },{
+      "type": "TREE",
+      "image": 1,
+      "blur": 0,
+      "opacity": 1,
+      "zIndex": 2000,
+      "size": [0.025, 0.025],
+      "text": "",
+      "animations": [
+        { "frame": 105, "position": [-1, 0.75, 0]},
+        { "frame": 110, "position": [0.75, 0.75, 0]},
+        { "frame": 340, "position": [0.55, 0.75, 0]},
+        { "frame": 350, "position": [2.5, 0.75, 0]}
+      ]
+    },{
+      "type": "TREE",
+      "image": 2,
+      "blur": 0,
+      "opacity": 1,
+      "zIndex": 2000,
+      "size": [0.025, 0.025],
+      "text": "",
+      "animations": [
+        { "frame": 105, "position": [-1, 0.75, 0]},
+        { "frame": 110, "position": [0.95, 0.75, 0]},
+        { "frame": 340, "position": [0.75, 0.75, 0]},
+        { "frame": 350, "position": [2.5, 0.75, 0]}
+      ]
+    },{
       "type": "SEESAW",
       "blur": 0,
       "opacity": 1,
       "zIndex": 2000,
-      "size": [0.15, 0.15],
+      "size": [0.135, 0.135],
       "text": "",
       "animations": [
         { "frame": 140, "position": [1.5, 0.8, 0]},
@@ -362,10 +586,10 @@
       "color": "#517a10",
       "text": "CLICK THE SEESAW MULTIPLE TIMES",
       "animations": [
-        { "frame": 150, "position": [1.5, 0.86, 0]},
-        { "frame": 170, "position": [0.65, 0.86, 0]},
-        { "frame": 200, "position": [0.65, 0.86, 0]},
-        { "frame": 220, "position": [-0.5, 0.86, 0]}
+        { "frame": 150, "position": [1.5, 0.87, 0]},
+        { "frame": 160, "position": [0.65, 0.87, 0]},
+        { "frame": 200, "position": [0.65, 0.87, 0]},
+        { "frame": 220, "position": [-0.5, 0.87, 0]}
       ]
     },{
       "type": "PLAIN",
@@ -375,17 +599,17 @@
       "color": "#517a10",
       "text": "TO HELP CHILDREN PLAY WITH IT!",
       "animations": [
-        { "frame": 150, "position": [1.5, 0.9, 0]},
-        { "frame": 170, "position": [0.7, 0.9, 0]},
-        { "frame": 200, "position": [0.7, 0.9, 0]},
-        { "frame": 220, "position": [-0.5, 0.9, 0]}
+        { "frame": 150, "position": [1.5, 0.91, 0]},
+        { "frame": 160, "position": [0.7, 0.91, 0]},
+        { "frame": 200, "position": [0.7, 0.91, 0]},
+        { "frame": 220, "position": [-0.5, 0.91, 0]}
       ]
     },{
       "type": "JUNGLEGYM",
       "blur": 0,
       "opacity": 1,
       "zIndex": 2000,
-      "size": [0.25, 0.25],
+      "size": [0.245, 0.245],
       "text": "",
       "animations": [
         { "frame": 230, "position": [1.5, 0.8, 0]},
@@ -401,10 +625,10 @@
       "color": "#517a10",
       "text": "CLICK THE JUNGLEGYM MULTIPLE TIMES",
       "animations": [
-        { "frame": 240, "position": [1.5, 0.86, 0]},
-        { "frame": 260, "position": [0.705, 0.86, 0]},
-        { "frame": 290, "position": [0.705, 0.86, 0]},
-        { "frame": 320, "position": [-0.5, 0.86, 0]}
+        { "frame": 240, "position": [1.5, 0.87, 0]},
+        { "frame": 250, "position": [0.705, 0.87, 0]},
+        { "frame": 290, "position": [0.705, 0.87, 0]},
+        { "frame": 320, "position": [-0.5, 0.87, 0]}
       ]
     },{
       "type": "PLAIN",
@@ -414,10 +638,10 @@
       "color": "#517a10",
       "text": "TO HELP THE CHILD CLIMB IT!",
       "animations": [
-        { "frame": 240, "position": [1.5, 0.9, 0]},
-        { "frame": 260, "position": [0.72, 0.9, 0]},
-        { "frame": 290, "position": [0.72, 0.9, 0]},
-        { "frame": 320, "position": [-0.5, 0.9, 0]}
+        { "frame": 240, "position": [1.5, 0.91, 0]},
+        { "frame": 250, "position": [0.72, 0.91, 0]},
+        { "frame": 290, "position": [0.72, 0.91, 0]},
+        { "frame": 320, "position": [-0.5, 0.91, 0]}
       ]
     }
 
