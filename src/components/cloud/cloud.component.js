@@ -1,7 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 
-require('./image-cloud.component.scss');
+require('./cloud.component.scss');
 
 @connect((store) => {
   return {
@@ -9,7 +9,7 @@ require('./image-cloud.component.scss');
     localization: store.localization.localization,
   }
 })
-export default class ImageCloud extends React.Component {
+export default class Cloud extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -34,7 +34,7 @@ export default class ImageCloud extends React.Component {
     let style = {
       width: this.state.width,
     }
-    return <div style={style} className="image-cloud">
+    return <div style={style} className="cloud">
       <img src="./cloud-1.png" />
     </div>;
   }

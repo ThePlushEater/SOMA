@@ -33,9 +33,9 @@ export default class Menu extends React.Component {
   render() {
     return <div className="menu">
       <div className="button"><span onClick={this.handleMenuClick.bind(this, 70)}>HOME</span></div>
-      <div className="button"><span onClick={this.handleMenuClick.bind(this, 140)}>ABOUT</span></div>
-      <div className="button"><span onClick={this.handleMenuClick.bind(this, 210)}>RESEARCH</span></div>
-      <div className="button"><span onClick={this.handleMenuClick.bind(this, 280)}>PROJECT</span></div>
+      <div className="button"><span onClick={this.handleMenuClick.bind(this, 140)}>PLAYGROUND</span></div>
+      <div className="button"><span onClick={this.handleMenuClick.bind(this, 500)}>RESEARCH</span></div>
+      <div className="button"><span onClick={this.handleMenuClick.bind(this, 500)}>PROJECT</span></div>
     </div>;
   }
 }

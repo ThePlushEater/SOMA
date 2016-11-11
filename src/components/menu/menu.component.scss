@@ -28,13 +28,23 @@
   > .button {
     flex-grow: 1;
     text-align: center;
-
     > span {
+      // -webkit-text-fill-color: $gray; /* Will override color (regardless of order) */
+      // -webkit-text-stroke-width: 0.5px;
+      // -webkit-text-stroke-color: $white;
+
       padding: 8px 4px;
       font-family: $font-bold;
       color: $gray;
       font-size: $font-medium-large;
+      font-weight: 700;
       cursor: pointer;
+
+      text-shadow: 2px 2px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+
+      &:hover {
+
+      }
     }
   }
 }

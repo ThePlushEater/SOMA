@@ -15,7 +15,7 @@ export default class TextTitle extends React.Component {
     this.state = {
       width: 0,
       height: 0,
-      ratio: 0.25,
+      ratio: 0.3,
     }
   }
   componentWillMount() {

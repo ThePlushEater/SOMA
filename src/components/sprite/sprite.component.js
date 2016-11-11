@@ -6,7 +6,12 @@ import { cosineInterpolate } from "./../../utils/interpolate";
 
 import TextTitle from "./../text/text-title.component";
 import TextPlain from "./../text/text-plain.component";
-import ImageCloud from "./../image/image-cloud.component";
+import Cloud from "./../cloud/cloud.component";
+import Road from "./../road/road.component";
+import Trike from "./../trike/trike.component";
+import Seesaw from "./../playground/seesaw.component";
+import Junglegym from "./../playground/junglegym.component";
+import Mountain from "./../mountain/mountain.component";
 
 require('./sprite.component.scss');
 
@@ -45,8 +50,8 @@ export default class Sprite extends React.Component {
         let current = this.props.item.animations[i];
         let pos1, pos2;
         if (this.state.wrapper) {
-          pos1 = [prev.position[0] * this.props.layout.width - this.state.wrapper.clientWidth * 0.5, prev.position[1] * this.props.layout.height - this.state.wrapper.clientHeight * 0.5, prev.position[2]];
-          pos2 = [current.position[0] * this.props.layout.width - this.state.wrapper.clientWidth * 0.5, current.position[1] * this.props.layout.height - this.state.wrapper.clientHeight * 0.5, current.position[2]];
+          pos1 = [prev.position[0] * this.props.layout.width - this.state.wrapper.clientWidth * 0.5, prev.position[1] * this.props.layout.height - this.state.wrapper.clientHeight, prev.position[2]];
+          pos2 = [current.position[0] * this.props.layout.width - this.state.wrapper.clientWidth * 0.5, current.position[1] * this.props.layout.height - this.state.wrapper.clientHeight, current.position[2]];
         } else {
           pos1 = [prev.position[0] * this.props.layout.width, prev.position[1] * this.props.layout.height, prev.position[2]];
           pos2 = [current.position[0] * this.props.layout.width, current.position[1] * this.props.layout.height, current.position[2]];
@@ -59,14 +64,14 @@ export default class Sprite extends React.Component {
     if (!found && frame <= this.props.item.animations[0].frame) {
       let temp = this.props.item.animations[0];
       if (this.state.wrapper) {
-        position = [temp.position[0] * this.props.layout.width - this.state.wrapper.clientWidth * 0.5, temp.position[1] * this.props.layout.height - this.state.wrapper.clientHeight * 0.5, temp.position[2]];
+        position = [temp.position[0] * this.props.layout.width - this.state.wrapper.clientWidth * 0.5, temp.position[1] * this.props.layout.height - this.state.wrapper.clientHeight, temp.position[2]];
       } else {
         position = [temp.position[0] * this.props.layout.width, temp.position[1] * this.props.layout.height, temp.position[2]];
       }
     } else if (!found && frame >= this.props.item.animations[0].frame) {
       let temp = this.props.item.animations[this.props.item.animations.length-1];
       if (this.state.wrapper) {
-        position = [temp.position[0] * this.props.layout.width - this.state.wrapper.clientWidth * 0.5, temp.position[1] * this.props.layout.height - this.state.wrapper.clientHeight * 0.5, temp.position[2]];
+        position = [temp.position[0] * this.props.layout.width - this.state.wrapper.clientWidth * 0.5, temp.position[1] * this.props.layout.height - this.state.wrapper.clientHeight, temp.position[2]];
       } else {
         position = [temp.position[0] * this.props.layout.width, temp.position[1] * this.props.layout.height, temp.position[2]];
       }
@@ -77,15 +82,25 @@ export default class Sprite extends React.Component {
       zIndex: this.props.item.zIndex ? parseInt(this.props.item.zIndex): 0,
       filter: this.props.item.blur ? "blur(" + Math.floor(this.props.item.blur) + "px)" : "none",
       transform: "translate(" + (position[0]) + "px, " + (position[1]) + "px)",
-    }
+    };
 
     let child;
     if (this.props.item.type == "TITLE") {
       child = <TextTitle size={this.props.item.size} text={this.props.item.text} />;
     } else if (this.props.item.type == "PLAIN") {
-      child = <TextPlain size={this.props.item.size} text={this.props.item.text} />;
+      child = <TextPlain size={this.props.item.size} text={this.props.item.text} color={this.props.item.color} />;
     } else if (this.props.item.type == "CLOUD") {
-      child = <ImageCloud size={this.props.item.size} text={this.props.item.text} />;
+      child = <Cloud size={this.props.item.size} />;
+    } else if (this.props.item.type == "ROAD") {
+      child = <Road size={this.props.item.size} />;
+    } else if (this.props.item.type == "TRIKE") {
+      child = <Trike size={this.props.item.size} />;
+    } else if (this.props.item.type == "SEESAW") {
+      child = <Seesaw size={this.props.item.size} />;
+    } else if (this.props.item.type == "MOUNTAIN") {
+      child = <Mountain size={this.props.item.size} image={this.props.item.image} />;
+    } else if (this.props.item.type == "JUNGLEGYM") {
+      child = <Junglegym size={this.props.item.size} />;
     }
 
     return <div style={style} ref="wrapper" className="sprite">

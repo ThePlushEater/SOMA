@@ -1,0 +1,12 @@
+@import "./../../scss/variables.scss";
+
+.road {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+
+  border-top: 8px #c9da8c dashed;
+
+  background-color: #a9c166;
+}

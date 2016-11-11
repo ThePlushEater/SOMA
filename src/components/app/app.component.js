@@ -33,7 +33,7 @@ export default class App extends React.Component {
 
     setTimeout(function() {
       app.scrollLeft = 1;
-    }, 100);
+    }, 500);
   }
   handleMouseWheel(element, event) {
     element.scrollLeft += event.deltaY * 0.05;

@@ -1,19 +1,27 @@
-import { normalize } from 'normalizr';
+import { normalize, arrayOf } from 'normalizr';
+import Immutable from 'seamless-immutable';
 
-export default function reducer(state={
+const defaultState = Immutable({
   fetching: false,
   fetched: false,
   error: null,
   width: 0,
   height: 0,
   frame: 0,
-}, action) {
+  right: true,
+});
+
+export default function reducer(state = defaultState, action) {
   switch (action.type) {
     case "SET_LAYOUT_FRAME": {
-      return {...state, frame: action.payload}
+      let right = true;
+      if (action.payload < state.frame) {
+        right = false;
+      }
+      return state.merge({frame: action.payload, right: right});
     }
     case "SET_LAYOUT_SIZE": {
-      return {...state, width: action.payload.width + 8, height: action.payload.height - 4}
+      return state.merge({width: action.payload.width + 4, height: action.payload.height - 4});
     }
   }
   return state;

@@ -1,0 +1,128 @@
+@import "./../../scss/variables.scss";
+
+.junglegym {
+  position: absolute;
+  bottom: 0;
+
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+
+  -webkit-transition: 1.5s;
+     -moz-transition: 1.5s;
+          transition: 1.5s;
+  -webkit-animation-timing-function: ease-out; /* Chrome, Safari, Opera */
+          animation-timing-function: ease-out;
+
+
+  > .wrapper {
+    position: relative;
+    width: 100%;
+    > .actor {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 25%;
+      height: auto;
+      cursor: pointer;
+
+      -webkit-transition-duration: 0.35s;
+         -moz-transition-duration: 0.35s;
+              transition-duration: 0.35s;
+      -webkit-animation-timing-function: ease-out; /* Chrome, Safari, Opera */
+              animation-timing-function: ease-out;
+
+      &.step-0 {
+        left: 87%;
+        bottom: -3%;
+      }
+      &.step-1 {
+        left: 74%;
+        bottom: 5%;
+      }
+      &.step-2 {
+        left: 73%;
+        bottom: 20%;
+      }
+      &.step-3 {
+        left: 71%;
+        bottom: 35%;
+      }
+      &.step-4 {
+        left: 67%;
+        bottom: 50%;
+      }
+      &.step-5 {
+        left: 62%;
+        bottom: 63%;
+      }
+      &.step-6 {
+        left: 56%;
+        bottom: 76%;
+      }
+      &.step-7 {
+        left: 45%;
+        bottom: 85%;
+      }
+      &.step-8 {
+        left: 38%;
+        bottom: 92%;
+      }
+
+      &.step-15 {
+        left: 0%;
+        bottom: 5%;
+      }
+      &.step-14 {
+        left: 0%;
+        bottom: 20%;
+      }
+      &.step-13 {
+        left: 3%;
+        bottom: 35%;
+      }
+      &.step-12 {
+        left: 7%;
+        bottom: 50%;
+      }
+      &.step-11 {
+        left: 12%;
+        bottom: 63%;
+      }
+      &.step-10 {
+        left: 18%;
+        bottom: 76%;
+      }
+      &.step-9 {
+        left: 30%;
+        bottom: 85%;
+      }
+
+      &.jumping {
+        animation-name: jump;
+      	animation-duration: 0.5s;
+      	animation-iteration-count: infinite;
+      	animation-timing-function: ease-in-out;
+      }
+    }
+
+    > .base {
+      cursor: pointer;
+      // pointer-events: none;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 50%;
+      height: auto;
+
+      &.left {
+
+      }
+
+      &.right {
+        left: 50%;
+      }
+    }
+  }
+}

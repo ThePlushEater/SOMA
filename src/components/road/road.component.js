@@ -1,7 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 
-require('./text-plain.component.scss');
+require('./road.component.scss');
 
 @connect((store) => {
   return {
@@ -9,11 +9,11 @@ require('./text-plain.component.scss');
     localization: store.localization.localization,
   }
 })
-export default class TextPlain extends React.Component {
+export default class Road extends React.Component {
   constructor() {
     super();
     this.state = {
-      fontSize: 0,
+      width: 0,
     }
   }
   componentWillMount() {
@@ -22,21 +22,23 @@ export default class TextPlain extends React.Component {
   componentWillReceiveProps(nextProps) {
     if (nextProps.layout.width > nextProps.layout.height) {
       this.setState({
-        fontSize: nextProps.layout.height * nextProps.size[0],
+        width: nextProps.layout.width * 2,
+        height: nextProps.layout.height * nextProps.size[0],
       });
     } else {
       this.setState({
-        fontSize: nextProps.layout.height * nextProps.size[1],
+        width: nextProps.layout.width * 2,
+        height: nextProps.layout.height * nextProps.size[1],
       });
     }
   }
   render() {
     let style = {
-      color: this.props.color ? this.props.color : "rgba(128, 128, 128, 1)",
-      fontSize: this.state.fontSize,
+      width: this.state.width,
+      height: this.state.height,
     }
-    return <div style={style} className="text-plain">
-      {this.props.text}
+    return <div style={style} className="road">
+
     </div>;
   }
 }
